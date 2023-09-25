@@ -1,16 +1,18 @@
-import { Luxurious_Roman } from "next/font/google";
+import { Inter } from "next/font/google";
 import Prizes from "@/molecules/Prizes";
-const luxurios = Luxurious_Roman({ weight: "400", subsets: ["latin"] });
+const luxurios = Inter({ weight: "700", subsets: ["latin"] });
 
 const Prize = () => {
   return (
     <div >
       <div className="flex justify-between mt-4">
-        <div className=" border-t-[0.75px] w-[32.52px] mt-4"></div>
-        <h1 className={`${luxurios.className} "mt-24 text-[19px]"`}>
+        <div className=" border-t-[0.75px] w-[32.52px]   mt-4 "></div>
+        <div className="text-[18px] text-center">
+        <h1 className={luxurios.className}>
           {" "}
-          Prizes for this rounds candidates
+          PRIZES FOR THIS ROUNDS CANDIDATE
         </h1>
+        </div>
         <div className=" border-t-[0.75px] w-[32.52px] mt-4"></div>
       </div>
 

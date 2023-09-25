@@ -7,7 +7,7 @@ const colorT = "bg-white";
 const ParticipateCard = ({ image, title, content, color }) => {
   return (
     <div
-      className={`flex ${color} w-[238px] h-[124px] mx-auto px-4 rounded-[9px] my-10`}
+      className={`flex ${color} w-[238px] h-[124px] mx-auto px-4 rounded-[9px] `}
     >
       <div className="self-center">
         <Image

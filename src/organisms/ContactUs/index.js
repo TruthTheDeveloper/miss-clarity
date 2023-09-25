@@ -27,7 +27,7 @@ const ContactUs = () => {
                 <Message/>
             </div>
             <div className="w-[110.3px] h-[27.88px] mx-auto my-4">
-                <Button label={'Submit'} />
+                <Button label={'Submit'} borderRadius={"rounded-[50px]"} color={'bg-pink text-text-white'}/>
             </div>
         </div>
     )

@@ -23,7 +23,7 @@ const Prizes = ({ position, awardImage,positionImage,  cash, modeling, vacation,
           style={{margin:'auto', paddingTop:40}}
         />
       </div>
-      <div className="flex justify-center mt-4 text-[25px]">
+      <div className="flex justify-center mt-4 text-[20px]">
       <h1 className={`${inter.className}`}>{position}</h1>
       </div>
     

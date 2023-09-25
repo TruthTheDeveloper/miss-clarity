@@ -1,8 +1,8 @@
-const Button = ({label}) => {
+const Button = ({label, borderRadius, color}) => {
 
     return(
-        <div className='bg-pink text-[16px]  w-full h-full rounded-[50px]'>
-        <a className='flex justify-center pt-1 text-text-white '>{label}</a>
+        <div className={` text-[16px]  w-full h-full ${borderRadius} ${color}`}>
+        <a className='flex justify-center pt-1  '>{label}</a>
       </div>
     )
 }

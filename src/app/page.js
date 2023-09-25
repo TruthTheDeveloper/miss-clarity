@@ -8,6 +8,8 @@ import ReceivePrize from '@/organisms/ReceivePrize'
 import ContactUs from '@/organisms/ContactUs'
 import Frequently from '@/organisms/Frequently'
 import Footer from '@/organisms/Footer'
+import Sponsors from '@/organisms/Sponsors'
+import PreviousWinner from '@/organisms/PreviousWinner'
 
 
 export default function Home() {
@@ -15,6 +17,8 @@ export default function Home() {
     <main className="min-h-screen bg-[white] text-text-black w-full ">
       <Navbar/>
       <Header/>
+      <Sponsors/>
+      <PreviousWinner/>
       <Prize/>
       <Contest/>
       <Participate/>
