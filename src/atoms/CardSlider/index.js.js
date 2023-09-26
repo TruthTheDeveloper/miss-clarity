@@ -7,7 +7,7 @@ import React, { Component } from 'react'
 
 const CardSlider = ({image, badge, cash, prize}) => {
   return (
-    <div className="relative w-[225px] h-[320px] mx-8  shadow-md rounded-[10px]">
+    <div className="relative w-[225px] h-[320px] mx-auto shadow-md rounded-[10px] mb-16 ">
       <div className="absolute top-0 right-0 w-[50px] ">
         <Image
           src={badge}
@@ -37,7 +37,7 @@ const CardSlider = ({image, badge, cash, prize}) => {
             <span className="px-2 text-green font-semibold ">{cash}</span>{prize}
           </p>
         </div>
-        <div className="w-[137.06px] h-[29.06px] mx-auto mt-3  ">
+        <div className="w-[137.06px] h-[29.06px] mx-auto mt-3">
           <Button label={"View Story"} borderRadius={'rounded-[10px]'} color={'bg-pink text-text-white'}/>
         </div>
       </div>
