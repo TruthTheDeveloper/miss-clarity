@@ -16,6 +16,7 @@ const Prize = () => {
         <div className=" border-t-[0.75px] w-[32.52px] mt-4"></div>
       </div>
 
+      <div className="md:flex md:justify-evenly">
       <Prizes
         position={"First Place Winner"}
         positionImage={"/1ST.png"}
@@ -44,6 +45,7 @@ const Prize = () => {
         vacation={"Luxury Vacation"}
         ticket={"Wardrobe "}
       />
+      </div>
     </div>
   );
 };

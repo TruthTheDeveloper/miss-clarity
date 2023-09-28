@@ -33,7 +33,7 @@ const DragScroll = () => {
     <Swiper
       // install Swiper modules
       modules={[Pagination]}
-      spaceBetween={10}
+      spaceBetween={0}
       slidesPerView={isGreaterThan425x}
       // navigation
       pagination={{ clickable: true }}

@@ -6,7 +6,7 @@ const inter = Inter({weight: '700', subsets: ['latin'] })
 const Sponsors = () => {
   return (
     <div>
-      <div className="text-[18px] text-center my-10">
+      <div className="text-[18px] text-center lg:mt-12 ">
         <h1 className={inter.className}>OUR SPONSORS</h1>
       </div>
       <div className="flex justify-between m-5 py-4">

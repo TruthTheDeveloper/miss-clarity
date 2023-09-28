@@ -3,7 +3,7 @@ import Image from "next/image";
 const QuestionCard = () => {
 
     return(
-        <div className="flex border-[#303237] border-[0.74px] rounded-[7.36px] justify-between w-[267.76px] h-[41.23px] items-center px-2 my-2">
+        <div className="flex border-[#303237] border-[0.74px] rounded-[7.36px] justify-between w-[267.76px] h-[41.23px] items-center px-2 my-2 md:w-[300px] lg:w-[400px]">
             <p>Question text goes here</p>
             <Image
           src={'/Icon.svg'}

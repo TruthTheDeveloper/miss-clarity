@@ -7,7 +7,7 @@ import React, { Component } from 'react'
 
 const CardSlider = ({image, badge, cash, prize}) => {
   return (
-    <div className="relative w-[225px] h-[320px] mx-auto shadow-md rounded-[10px] mb-16 ">
+    <div className="relative w-[225px]  h-[320px] mx-auto  shadow-md rounded-[10px] mb-16 ">
       <div className="absolute top-0 right-0 w-[50px] ">
         <Image
           src={badge}

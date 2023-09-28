@@ -3,7 +3,8 @@ import { Roboto } from "next/font/google";
 const roboto = Roboto({ weight: "700", subsets: ["latin"] });
 const Frequently = () => {
   return (
-    <div className="mx-8 mt-12 ">
+    <div className="mx-8 md: mt-12 md:flex md:justify-between">
+      <div className="md:basis-1/2 md:px-8">
       <div className="text-[35.34px] leading-[42.41px] ">
         <h1 className={roboto.className}>Frequently asked questions</h1>
       </div>
@@ -14,7 +15,8 @@ const Frequently = () => {
           questions (doubts) that can be answered.
         </p>
       </div>
-      <div className="mt-6">
+      </div>
+      <div className="mt-6 md:mt-0 md:basis-1/2 md:ml-16 ">
         <QuestionCard />
         <QuestionCard />
 

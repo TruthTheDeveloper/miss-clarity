@@ -5,7 +5,7 @@ const inter = Inter({weight: '700', subsets: ['latin'] })
 
 const Contest = () => {
   return (
-    <div className=" relative w-[360px] h-[959px] mx-auto mt-12 ">
+    <div className=" relative h-[959px] md:w-full mx-auto  mt-12 ">
       <div>
         <Image
           src={"/wallpaper.jpg"}
@@ -26,7 +26,7 @@ const Contest = () => {
           backgroundColor: "rgba(0, 0, 0, 0.5)",
         }}
       >
-        <div className="text-text-white bg-brown w-[282px] mx-auto mt-12 p-8 h-[877px]">
+        <div className="text-text-white bg-brown w-[282px] md:w-[673px] md:h-[600px] md:mt-32 md:rounded-lg  mx-auto md:ml-12 mt-12 p-8 h-[877px]">
           <div className="text-[29px] text-center">
           <h1  className={`${inter.className}`}>How the Contest Works</h1>
           </div>
@@ -37,6 +37,9 @@ const Contest = () => {
             <li className="m-4">4. Spread the Word: Share contestant links on social media to involve your friends.</li>
             <li className="m-4">5. Stay Tuned: Watch the countdown and await the winners' announcement.</li>
             <li className="m-4">6. Join us in celebrating beauty, talent, and dreams at [Your Beauty Contest Name]. Start now by clicking "Get Started"!</li>
+            <li className="m-4">6. Join us in celebrating beauty, talent, and dreams at [Your Beauty Contest Name]. Start now by clicking "Get Started"!</li>
+            <li className="m-4">6. Join us in celebrating beauty, talent, and dreams at [Your Beauty Contest Name]. Start now by clicking "Get Started"!</li>
+
           </ul>
         </div>
       </div>
