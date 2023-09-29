@@ -1,11 +1,16 @@
-import Image from 'next/image'
+import DashBoard from '@/organisms/DashBoard'
+import Footer from '@/organisms/LandingPage/Footer'
+import Navbar from '@/organisms/LandingPage/NavBar'
+import Sponsors from '@/organisms/LandingPage/Sponsors'
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-     <div>
-      <p>Hello world from miami</p>
-      </div>
+    <main className="min-h-screen bg-[white] text-text-black w-full">
+      <Navbar/>
+     <DashBoard/>
+     <Sponsors/>
+     <Footer/>
     </main>
   )
 }
