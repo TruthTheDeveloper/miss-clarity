@@ -33,21 +33,19 @@ const Header = () => {
   };
 
   return (
-    <section className=" pt-8 md:flex  md:justify-between">
-      <div className="px-4 md:pl-10 md:basis-1/2  md:py-24  ">
+    <section className=" pt-8 md:flex   md:justify-between  ">
+      <div className="px-4 md:pl-10  md:py-24 md:basis-1/2 ">
         <p className={`${roboto.className} text-[28px] md:text-[45px] md:leading-12`}>
-          Medium length hero <br /> headline goes here
+        Biggest Online Beauty Pageant Contest
         </p>
         <p className="pt-6 md:text-[20px] md:leading-6 ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-          ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+         Embark on a glamorous journey of self-discovery, empowerment, and recognition and become the one to wear the crown of elegance
         </p>
         <div className="w-[147px] md:w-[170px]  h-[30px] md:h-[40px] mt-8 ">
-          <Button label={"Apply Now"} borderRadius={"rounded-[50px]"} color={'bg-pink text-text-white md:text-[20px]'}/>
+          <Button label={"Apply Now"} borderRadius={"rounded-[50px]"} color={'bg-pink py-1 text-text-white md:text-[20px]'}/>
         </div>
       </div>
-      <div className=" w-full md:h-[560px] md:w-[200px]   mt-12 md:mt-0 md:mb-12 md:basis-1/2 ">
+      <div className=" w-full basis-1/2 md:w-[600px] mt-12 md:mt-0 md:mb-12 ">
         <Slider
           selectedItem={currentSlide}
           next={next}

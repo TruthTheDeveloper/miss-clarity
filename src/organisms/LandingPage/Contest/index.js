@@ -5,7 +5,7 @@ const inter = Inter({weight: '700', subsets: ['latin'] })
 
 const Contest = () => {
   return (
-    <div className=" relative h-[959px] md:w-full mx-auto  mt-12 ">
+    <div className=" relative h-[1200px] md:h-[959px] md:w-full mx-auto  mt-12 ">
       <div>
         <Image
           src={"/wallpaper.jpg"}
@@ -26,19 +26,21 @@ const Contest = () => {
           backgroundColor: "rgba(0, 0, 0, 0.5)",
         }}
       >
-        <div className="text-text-white bg-brown w-[282px] md:w-[673px] md:h-[600px] md:mt-32 md:rounded-lg  mx-auto md:ml-12 mt-12 p-8 h-[877px]">
+        <div className="text-text-white bg-brown w-[282px] md:w-[673px] md:h-[600px] md:mt-32 md:rounded-lg  mx-auto md:ml-12 mt-12 p-8 h-[1050px]">
           <div className="text-[29px] text-center">
           <h1  className={`${inter.className}`}>How the Contest Works</h1>
           </div>
           <ul>
-            <li className="m-4">1.Discover Contestants: Meet our talented contestants, each with their unique charisma </li>
-            <li className="m-4">2.Vote for Favorites: Cast your votes to support your preferred contestants. </li>
-            <li className="m-4">3. Boost Their Chances: Purchase extra votes to increase your favorites' odds.</li>
-            <li className="m-4">4. Spread the Word: Share contestant links on social media to involve your friends.</li>
-            <li className="m-4">5. Stay Tuned: Watch the countdown and await the winners' announcement.</li>
-            <li className="m-4">6. Join us in celebrating beauty, talent, and dreams at [Your Beauty Contest Name]. Start now by clicking "Get Started"!</li>
-            <li className="m-4">6. Join us in celebrating beauty, talent, and dreams at [Your Beauty Contest Name]. Start now by clicking "Get Started"!</li>
-            <li className="m-4">6. Join us in celebrating beauty, talent, and dreams at [Your Beauty Contest Name]. Start now by clicking "Get Started"!</li>
+            <li className="m-4">1.Register to be a contestant by clicking on the "Apply" button </li>
+            <li className="m-4">2.Fill out the necessary details in the profile section of the website </li>
+            <li className="m-4">3.Copy and share you links to friends and supporters to vote for you</li>
+            <li className="m-4">4. You can also vote for yourself, a vote cost $0.99 per vote</li>
+            <li className="m-4">5. Votes are unlimited, you can vote as many times as you want</li>
+            <li className="m-4">6. To become enlisted in our top contestant you must have rank over 1000 votes</li>
+            <li className="m-4">5. To vote for a candidate you need to have the candidate voting link, exception been our enlisted top contestant</li>
+            <li className="m-4">6. Winners would be contacted via email, by the end of the contest</li>
+            <li className="m-4">7. The Tournament consist of many round you can apply for all rounds if you don't win the current round"!</li>
+            
 
           </ul>
         </div>

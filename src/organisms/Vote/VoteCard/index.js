@@ -5,7 +5,7 @@ import Button from "@/atoms/Button";
 
 const inter = Inter({ weight: "700", subsets: ["latin"] });
 
-const VoteCard = () => {
+const VoteCard = ({image, name}) => {
   return (
     <main className="relative">
       <div className="relative w-full h-[1370px] lg:h-[780px] ">
@@ -38,7 +38,7 @@ const VoteCard = () => {
           <div className="basis-1/2 md:my-2">
             <div className="w-[280px] md:w-[200px] mx-auto">
               <Image
-                src={"/tridad.png"}
+                src={image}
                 width={280}
                 height={180}
                 objectFit="cover"
@@ -46,7 +46,7 @@ const VoteCard = () => {
                 style={{ weight: "100%", height: "100%" }}
               />
             </div>
-            <p className="text-center text-[24px] my-12 md:my-6">Anni Marie</p>
+            <p className="text-center text-[24px] my-12 md:my-6">{name}</p>
           </div>
 
           <div className="basis-1/2 md:my-3">
@@ -108,7 +108,7 @@ const VoteCard = () => {
                 <Button
                   label={"Vote"}
                   color={
-                    "text-white bg-pink text-[24px]   py-1 cursor-pointer    rounded-md"
+                    "text-white bg-pink text-[28px] md:text-[18px]   py-1 cursor-pointer    rounded-md"
                   }
                   syl={"font-bold"}
                 />

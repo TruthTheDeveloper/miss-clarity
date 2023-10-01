@@ -10,6 +10,7 @@ import Frequently from '@/organisms/LandingPage/Frequently'
 import Footer from '@/organisms/LandingPage/Footer'
 import Sponsors from '@/organisms/LandingPage/Sponsors'
 import PreviousWinner from '@/organisms/LandingPage/PreviousWinner'
+import CurrentWinner from '@/organisms/LandingPage/CurrentWinner'
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Header/>
       <Sponsors/>
       <PreviousWinner/>
+      <CurrentWinner/>
       <Prize/>
       <Contest/>
       <Participate/>

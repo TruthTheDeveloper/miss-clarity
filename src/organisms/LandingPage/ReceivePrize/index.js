@@ -21,7 +21,7 @@ const ReceivePrize = () => {
            alt="Picture of the author"
            />
           </div>
-          <p>Age Restrictions: Failure to meet the specified age requirements for the contest.</p>
+          <p>Winners would be contacted via email: if additional informational are needed from contestant if should be sumitted via mail</p>
         </div>
         <div className="flex my-2 md:my-4">
           <div className="mx-2 mt-1">
@@ -32,7 +32,7 @@ const ReceivePrize = () => {
            alt="Picture of the author"
            />
           </div>
-          <p>Age Restrictions: Failure to meet the specified age requirements for the contest.</p>
+          <p>Contestant can choose to decline any of the prizes if she so will but all prizes would be giving</p>
         </div>
         <div className="flex my-2 md:my-4">
           <div className="mx-2 mt-1">
@@ -43,7 +43,7 @@ const ReceivePrize = () => {
            alt="Picture of the author"
            />
           </div>
-          <p>Age Restrictions: Failure to meet the specified age requirements for the contest.</p>
+          <p>Cash prizes would be sent via winners account which would be requested in their mail</p>
         </div>
         <div className="flex my-2 md:my-4">
           <div className="mx-2 mt-1">
@@ -54,7 +54,7 @@ const ReceivePrize = () => {
            alt="Picture of the author"
            />
           </div>
-          <p>Age Restrictions: Failure to meet the specified age requirements for the contest.</p>
+          <p>Traveling and Vacation Tickets and gift would be shipped to winners location, contestant are required to pay for shipping fee .</p>
         </div>
         <div className="flex my-2 md:my-4">
           <div className="mx-2 mt-1">
@@ -65,7 +65,7 @@ const ReceivePrize = () => {
            alt="Picture of the author"
            />
           </div>
-          <p>Age Restrictions: Failure to meet the specified age requirements for the contest.</p>
+          <p>Please ensure to provide your correct bank account number and address to the mail that request for them.</p>
         </div>
        
       </div>

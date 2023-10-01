@@ -8,15 +8,15 @@ const Footer = () => {
           <div className="my-2">
             <Image src={"/Logo-2.svg"} width={100} height={100} />
           </div>
-          <div className="py-2">Link One</div>
+          <div className="py-2">About Us</div>
 
-          <div className="py-2">Link One</div>
+          <div className="py-2">FAQ</div>
 
-          <div className="py-2"> Link One</div>
+          <div className="py-2"> Contact Us</div>
 
-          <div className="py-2">Link One</div>
+          <div className="py-2">rules and regulation</div>
 
-          <div className="py-2">Link One</div>
+          <div className="py-2">How the contest works</div>
 
           <div>
           <div className="flex justify-center justify-between mt-2 my-12">

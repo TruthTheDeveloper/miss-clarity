@@ -5,8 +5,8 @@ import Image from "next/image";
 const luxurios = Luxurious_Roman({ weight: "400", subsets: ["latin"] });
 const Rules = () => {
   return (
-    <div className=" bg-shade-pink h-[800px] md:h-[700px] pt-6 mb-12">
-      <div className="bg-white w-[300px] md:w-[800px] h-[760.12px] md:h-[630px]  mx-auto rounded-[16.08px] md:flex md:justify-between ">
+    <div className=" bg-shade-pink h-[1200px] md:h-[800px] pt-6 mb-12">
+      <div className="bg-white w-[300px] md:w-[800px] h-[1000.12px] md:h-[750px]  mx-auto rounded-[16.08px] md:flex md:justify-between ">
         <div className="md:w-[450px] md:basis-1/2">
           <div>
           <div className="flex justify-between pt-8">
@@ -20,27 +20,22 @@ const Rules = () => {
           <div className="mx-12 mt-8">
             <ul className="list-disc text-[16.62px]">
               <li className="py-2">
-                Age Restrictions: Failure to meet the specified age requirements
-                for the contest.
+                This is a 1 week contest, each round is 1 week and no more, results are announce at the end of the week.
               </li>
               <li className="py-2">
-                Age Restrictions: Failure to meet the specified age requirements
-                for the contest.
+                Your must be atleast 15 years of age to participate in this contest failure to meet with this requirement may leaad to disqualification
               </li>
 
               <li className="py-2">
-                Age Restrictions: Failure to meet the specified age requirements
-                for the contest.
+                Peronal update and the status of your vote would be sent to your mail provided on the site
               </li>
 
               <li className="py-2">
-                Age Restrictions: Failure to meet the specified age requirements
-                for the contest.
+               Winners of the vote would be invited for an online interview, note you are provided to participate in this interview failure to do so my lead to disqualification and lose of prize
               </li>
 
               <li className="py-2">
-                Age Restrictions: Failure to meet the specified age requirements
-                for the contest.
+                Photo used in the your profile must be of good quality, poor quality profile will not be enlisted in the top contestant even though the 1000 vote requirment is reached 
               </li>
             </ul>
           </div>
@@ -51,7 +46,7 @@ const Rules = () => {
               <Button
                 label={"View More"}
                 borderRadius={"rounded-[50px]"}
-                color={"bg-pink  text-text-white md:text-[20px]"}
+                color={"bg-pink  text-text-white md:text-[20px] py-1"}
               />
             </div>
 

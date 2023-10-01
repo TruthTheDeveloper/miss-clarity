@@ -2,13 +2,10 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
-
-
 import { Roboto } from "next/font/google";
 
 const roboto = Roboto({ weight: "700", subsets: ["latin"] });
 import Image from "next/image";
-
 
 const Slider = ({ selectedItem, onChange, next, prev, childComponent }) => {
   return (
@@ -20,30 +17,25 @@ const Slider = ({ selectedItem, onChange, next, prev, childComponent }) => {
         showStatus={false}
         showIndicators={false}
       >
-        <div>
-
-          
-          
-          <div className=" md:w-[450px]  ">
-          <Image
-            src={"/background-1.svg"}
-      
-            width={10}
-            height={10}
-            objectFit="cover"
-            alt="Picture of the author"
-            style={{ width: "auto", height: "auto" }}
-
-          />
+        <div className=" md:w-[600px] md:ml-auto ">
+          <div className="relative w-full h-[400px] md:h-[560px]  ">
+            <Image
+              src={"/pic/charm-4.jpg"}
+              fill
+              // objectFit="cover"
+              alt="Picture of the author"
+              style={{ width: "100%", height: "100%" }}
+            />
           </div>
-          <div className="h-[178px] md:h-[180px]  bg-light-pink text-left p-8">
+          <div className="h-[200px] md:h-[180px]  bg-light-pink text-left p-8">
             <div>
               <div>
-                <h1 className={roboto.className}>Short heading goes here</h1>
+                <p>
+                  Sponsored by the biggest fashion and comsestic brands across
+                  all continents, like the world best team in all place dance{" "}
+                </p>
               </div>
-              <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              </div>
+              {/* s */}
             </div>
             <div className="flex justify-between items-center  mt-4">
               <div className="flex justify-between pt-4 w-[40px] items-center">
@@ -105,29 +97,34 @@ const Slider = ({ selectedItem, onChange, next, prev, childComponent }) => {
           </div>
         </div>
 
-        <div>
-          <Image
-            src={"/background-1.svg"}
+        <div className=" md:w-[600px] md:ml-auto ">
+          <div className="relative w-full h-[400px] md:h-[560px]  ">
+            <Image
+              src={"/pic/misscharm-3.jpg"}
 
-            width={330}
-            height={139}
-            objectFit="cover"
-            alt="Picture of the author"
-          />
-          <div className="h-[251px] bg-light-pink text-left p-8">
+              fill
+              // objectFit="cover"
+              alt="Picture of the author"
+              style={{ width: "100%", height: "100%" }}
+            />
+          </div>
+          <div className="h-[200px] md:h-[180px]  bg-light-pink text-left p-8 pb-24">
             <div>
               <div>
-                <h1 className={roboto.className}>Short heading goes here</h1>
+              <p>
+                  {" "}
+                  Our pageants are open to people of all ages, genders, and
+                  ethnicities. We celebrate and embrace the unique qualities
+                  
+                </p>
               </div>
-              <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              </div>
+              {/* s */}
             </div>
-            <div className="flex justify-between items-center ">
+            <div className="flex justify-between items-center  mt-4">
               <div className="flex justify-between pt-4 w-[40px] items-center">
                 <div>
                   <Image
-                    src={"/dot.png"}
+                    src={"/thick.png"}
                     width={50}
                     height={50}
                     objectFit="cover"
@@ -136,7 +133,7 @@ const Slider = ({ selectedItem, onChange, next, prev, childComponent }) => {
                 </div>
                 <div>
                   <Image
-                    src={"/thick.png"}
+                    src={"/dot.png"}
                     width={50}
                     height={50}
                     objectFit="cover"
@@ -182,47 +179,55 @@ const Slider = ({ selectedItem, onChange, next, prev, childComponent }) => {
             </div>
           </div>
         </div>
-        <div>
-          <Image
-            src={"/background-1.svg"}
 
-            width={330}
-            height={139}
-            objectFit="cover"
-            alt="Picture of the author"
-          />
-          <div className="h-[251px] bg-light-pink text-left p-8">
+
+        <div className=" md:w-[600px] md:ml-auto ">
+          <div className="relative w-full h-[400px] md:h-[560px]  ">
+            <Image
+              src={"/pic/misscharm-1.jpg"}
+
+
+              fill
+              // objectFit="cover"
+              alt="Picture of the author"
+              style={{ width: "100%", height: "100%" }}
+            />
+          </div>
+          <div className="h-[200px] md:h-[180px]  bg-light-pink text-left p-8">
             <div>
               <div>
-                <h1 className={roboto.className}>Short heading goes here</h1>
+              <p>
+                  {" "}
+                  Our pageants are open to people of all ages, genders, and
+                  ethnicities. We celebrate and embrace the unique qualities
+              
+                </p>
               </div>
-              <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              </div>
+              {/* s */}
             </div>
-            <div className="flex justify-between items-center ">
+            <div className="flex justify-between items-center  mt-4">
               <div className="flex justify-between pt-4 w-[40px] items-center">
                 <div>
                   <Image
-                    src={"/dot.png"}
-                    width={50}
-                    height={50}
-                    objectFit="cover"
-                    style={{ width: "auto", height: "auto" }}
-                  />
-                </div>
-                <div>
-                  <Image
-                    src={"/dot.png"}
-                    width={50}
-                    height={50}
-                    objectFit="cover"
-                    style={{ width: "auto", height: "auto" }}
-                  />
-                </div>
-                <div>
-                  <Image
                     src={"/thick.png"}
+                    width={50}
+                    height={50}
+                    objectFit="cover"
+                    style={{ width: "auto", height: "auto" }}
+                  />
+                </div>
+                <div>
+                  <Image
+                    src={"/dot.png"}
+                    width={50}
+                    height={50}
+                    objectFit="cover"
+                    style={{ width: "auto", height: "auto" }}
+                  />
+                </div>
+                <div>
+                  <Image
+                    src={"/dot.png"}
                     width={50}
                     height={50}
                     objectFit="cover"

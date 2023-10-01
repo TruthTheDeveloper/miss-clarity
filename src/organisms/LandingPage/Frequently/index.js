@@ -17,13 +17,13 @@ const Frequently = () => {
       </div>
       </div>
       <div className="mt-6 md:mt-0 md:basis-1/2 md:ml-16 ">
-        <QuestionCard />
-        <QuestionCard />
+        <QuestionCard question={" How do I enter the online beauty pageant contest?"}/>
+        <QuestionCard question={"What are the eligibility requirements?"}/>
 
-        <QuestionCard />
+        <QuestionCard question={"What are the judging criteria?"}/>
 
-        <QuestionCard />
-        <QuestionCard />
+        <QuestionCard question={"Are there specific outfits required for different rounds?"}/>
+        <QuestionCard question={"Am i required to submit a video"}/>
       </div>
     </div>
   );

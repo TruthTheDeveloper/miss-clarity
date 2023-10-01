@@ -27,7 +27,7 @@ const Prizes = ({ position, awardImage,positionImage,  cash, modeling, vacation,
       <h1 className={`${inter.className}`}>{position}</h1>
       </div>
     
-      <ul className="list-disc text-[14px] ml-24 md:ml-4">
+      <ul className="list-disc text-[14px] w-[170px] mx-auto md:ml-4">
         <li>Cash Prize <span className="">${cash}</span></li>
         <li>{modeling}</li>
         <li>{vacation}</li>

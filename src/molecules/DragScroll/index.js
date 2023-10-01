@@ -41,42 +41,53 @@ const DragScroll = () => {
     >
       <SwiperSlide>
       <CardSlider
+      name={"Emma Johnson"}
+        navigate={"story/one"}
         badge={"/badge-1.svg"}
-        image={"/contestant-1.svg"}
-        cash={"$20,000"}
-        prize={"+ Modeling Contract XXXXX Company"}
+        image={"/pic/bf1.jpg"}
+        cash={"$120,000"}
+        prize={"+ Modeling Contract with Mary Kay + Scholarship"}
       />
       </SwiperSlide>
       <SwiperSlide>
       <CardSlider
+      name={"Olivia Smith"}
+      navigate={"story/two"}
       badge={"/badge-2.svg"}
-      image={"/contestant-2.svg"}
-      cash={"$20,000"}
-      prize={"+ Modeling Contract XXXXX Company"}
+      image={"/pic/cf-1.jpg"}
+      cash={"$80,000"}
+      prize={"+ Free ticket and all expense paid vacation to huwaii"}
     />
       </SwiperSlide>
       <SwiperSlide>
         <CardSlider
+        name={"Sophia Williams"}
+      navigate={"story/three"}
           badge={"/badge-3.svg"}
-          image={"/contestant-3.svg"}
-          cash={"$20,000"}
-          prize={"+ Modeling Contract XXXXX Company"}
+          image={"/pic/df-1.jpg"}
+          cash={"$40,000"}
+          prize={"+ Professional Photoshoot + Gift Certificate"}
         />
       </SwiperSlide>
       <SwiperSlide>
       <CardSlider
+      navigate={"story/four"}
+      name={"Ava Brown"}
+
         badge={"/badge-1.svg"}
-        image={"/contestant-1.svg"}
-        cash={"$20,000"}
-        prize={"+ Modeling Contract XXXXX Company"}
+        image={"/pic/ef-1.jpg"}
+        cash={"$120,000"}
+        prize={"+ Modeling Contract with Channel + Scholarship"}
       />
       </SwiperSlide>
       <SwiperSlide>
       <CardSlider
+      navigate={"story/five"}
+        name={"Isabella Martinez"}
         badge={"/badge-2.svg"}
-        image={"/contestant-2.svg"}
-        cash={"$20,000"}
-        prize={"+ Modeling Contract XXXXX Company"}
+        image={"/pic/z-1.jpg"}
+        cash={"$80,000"}
+      prize={"+ Free ticket and all expense paid vacation to huwaii"}
       />
       </SwiperSlide>
     </Swiper>

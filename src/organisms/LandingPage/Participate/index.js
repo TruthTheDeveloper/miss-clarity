@@ -36,49 +36,42 @@ const Participate = () => {
           </div>
         </div>
         <div className="md:flex md:justify-evenly">
-          <div className="md:mb-12">
+          <div className="mb-12 ">
           <ParticipateCard
             image={"/Task.svg"}
             title={"Sign Up"}
             content={'Register by clicking "Sign Up" and verify your email.'}
             color={"bg-light-pink"}
           />
-          <div className="border-deep-pink w-[100px] h-[15px] ml-[88px] border-0 border-r-4 md:hidden"></div>
-          <div className="bg-deep-pink w-[49.11px] h-[49.11px] border-r-2 mx-auto text-center  rounded-full md:hidden">
-            <p className="py-3 text-white">1</p>
+          
           </div>
-          </div>
-          <div>
+          <div className="mb-12 ">
           <ParticipateCard
             image={"/Client-Management.svg"}
             title={["Complete", "Profile:"]}
             content={"Upload photos and share your story."}
             color={"bg-white"}
           />
-          <div className="border-deep-pink w-[100px] h-[15px] ml-[88px] border-0 border-r-4 md:hidden"></div>
-          <div className="bg-deep-pink w-[49.11px] h-[49.11px] border-r-2 mx-auto text-center  rounded-full md:hidden">
-            <p className="py-3 text-white">2</p>
-          </div>
+
+  
           </div>
         </div>
         <div className="md:flex md:justify-evenly">
-          <div>
+          <div className="mb-12 ">
           <ParticipateCard
             image={"/Approval.svg"}
             title={"Collect Votes"}
-            content={"Encourage friends to vote or buy extra votes."}
+            content={"Encourage friends to support by voting or vote for yourself."}
             color={"bg-light-pink"}
           />
-          <div className="border-deep-pink w-[100px] h-[15px] ml-[88px] border-0 border-r-4 md:hidden"></div>
-          <div className="bg-deep-pink w-[49.11px] h-[49.11px] border-r-2 mx-auto text-center md:hidden rounded-full">
-            <p className="py-3 text-white">3</p>
-          </div>
+      
+  
           </div>
           <div>
           <ParticipateCard
             image={"/Delivery-Time.svg"}
             title={["Wait for", "Results"]}
-            content={"Keep an eye on for the winners announcement."}
+            content={"Keep an eye on your mail for the winners announcement."}
             color={"bg-white"}
           />
           </div>
