@@ -27,15 +27,17 @@ module.exports = {
       xxl: '1440px'
     },
     colors: {
+      'deep-pink':'#FF66B9',
       'shade-pink':'#F5EFF1',
       'light-pink':"#FFD8ED",
       'pink': '#E985A1',
       'text-white':'#fff',
       'text-black':'#303237',
-      'grey':'grey',
+      'grey':'#D9D9D980',
       'red':'#FF0000',
       'brown':'#1C0210',
       "white":'#fff',
+      "green":"#48A301"
 
     },
   },

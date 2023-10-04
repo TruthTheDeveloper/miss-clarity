@@ -4,11 +4,11 @@ import { Inter } from "next/font/google";
 const inter = Inter({ weight: "700", subsets: ["latin"] });
 const inte = Inter({ weight: "400", subsets: ["latin"] });
 const colorT = "bg-white";
-const ParticipateCard = ({ image, title, content, color }) => {
+const ParticipateCard = ({data, image, title, content, color }) => {
   return (
     <div
-      className={`flex ${color} w-[238px] h-[124px] mx-auto px-4 rounded-[9px] my-10`}
-    >
+      className={`flex ${color} w-[238px] h-[124px] mx-auto px-4 rounded-[9px] `}
+      data-aos={data}>
       <div className="self-center">
         <Image
           src={image}
