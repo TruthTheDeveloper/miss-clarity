@@ -34,7 +34,7 @@ const Header = () => {
 
   return (
     <section className=" pt-8 md:flex   md:justify-between  ">
-      <div className="px-4 md:pl-10  md:py-24 md:basis-1/2 ">
+      <div className="px-4 md:pl-10  md:py-24 md:basis-1/2 " >
         <p className={`${roboto.className} text-[28px] md:text-[45px] md:leading-12`}>
         Biggest Online Beauty Pageant Contest
         </p>

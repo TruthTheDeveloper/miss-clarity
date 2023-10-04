@@ -5,8 +5,8 @@ import Image from "next/image";
 const luxurios = Luxurious_Roman({ weight: "400", subsets: ["latin"] });
 const Rules = () => {
   return (
-    <div className=" bg-shade-pink h-[1200px] md:h-[800px] pt-6 mb-12">
-      <div className="bg-white w-[300px] md:w-[800px] h-[1000.12px] md:h-[750px]  mx-auto rounded-[16.08px] md:flex md:justify-between ">
+    <div id="rules" className=" bg-shade-pink h-[1200px] md:h-[800px] pt-6 mb-12">
+      <div className="bg-white w-[300px] md:w-[800px] h-[1050.12px] md:h-[750px]  mx-auto rounded-[16.08px] md:flex md:justify-between ">
         <div className="md:w-[450px] md:basis-1/2">
           <div>
           <div className="flex justify-between pt-8">
@@ -35,7 +35,7 @@ const Rules = () => {
               </li>
 
               <li className="py-2">
-                Photo used in the your profile must be of good quality, poor quality profile will not be enlisted in the top contestant even though the 1000 vote requirment is reached 
+                Photo used in the your profile must be of good quality, poor quality profile will not be enlisted in the top contestant even though the 1000 vote requirement is reached 
               </li>
             </ul>
           </div>
@@ -45,6 +45,7 @@ const Rules = () => {
             <div className="w-[147px] h-[30px] md:h-[35px] ">
               <Button
                 label={"View More"}
+                navigate={"/rules-regulation"}
                 borderRadius={"rounded-[50px]"}
                 color={"bg-pink  text-text-white md:text-[20px] py-1"}
               />

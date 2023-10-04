@@ -4,7 +4,7 @@ const luxurios = Inter({ weight: "700", subsets: ["latin"] });
 
 const Prize = () => {
   return (
-    <div>
+    <div id="prize">
       <div className="flex justify-between mt-4">
         <div className=" border-t-[0.75px] w-[32.52px]   mt-4 "></div>
         <div className="text-[18px] text-center">
@@ -33,7 +33,7 @@ const Prize = () => {
           awardImage={"/Winner-Badge-02.svg"}
           cash={"80,000"}
           modeling={"Free gift fashion accessories from our sponsors "}
-          vacation={"All expense paid Luxury Vacation to Huwawi"}
+          vacation={"All expense paid Luxury Vacation to Paris"}
           ticket={"Personal Styling Session"}
         />
         <Prizes

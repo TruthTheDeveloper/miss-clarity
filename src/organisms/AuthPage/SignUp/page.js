@@ -24,7 +24,7 @@ const SignUp = () => {
             Sign Up
           </h1>
           <p className="text-[12px] text-center py-2">
-            Lorem ipsum dolor sit amet adipiscing elit.
+            Create an account
           </p>
         </div>
         <div className="m-5">

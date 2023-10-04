@@ -1,11 +1,19 @@
+"use client"
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import ParticipateCard from "@/molecules/PartcipateCard";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const inter = Inter({ weight: "700", subsets: ["latin"] });
 const Participate = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1500 });
+  }, []);
   return (
-    <div className=" relative w-full h-[959px] md:h-[650px] mx-auto ">
+    <div id="candidate" className=" relative w-full h-[959px] md:h-[650px] mx-auto ">
       <div>
         <Image
           src={"/background.jpg"}
@@ -38,6 +46,7 @@ const Participate = () => {
         <div className="md:flex md:justify-evenly">
           <div className="mb-12 ">
           <ParticipateCard
+           data={"fade-right"}
             image={"/Task.svg"}
             title={"Sign Up"}
             content={'Register by clicking "Sign Up" and verify your email.'}
@@ -47,6 +56,8 @@ const Participate = () => {
           </div>
           <div className="mb-12 ">
           <ParticipateCard
+           data={"fade-left"}
+
             image={"/Client-Management.svg"}
             title={["Complete", "Profile:"]}
             content={"Upload photos and share your story."}
@@ -59,6 +70,8 @@ const Participate = () => {
         <div className="md:flex md:justify-evenly">
           <div className="mb-12 ">
           <ParticipateCard
+           data={"fade-right"}
+
             image={"/Approval.svg"}
             title={"Collect Votes"}
             content={"Encourage friends to support by voting or vote for yourself."}
@@ -69,6 +82,8 @@ const Participate = () => {
           </div>
           <div>
           <ParticipateCard
+           data={"fade-left"}
+
             image={"/Delivery-Time.svg"}
             title={["Wait for", "Results"]}
             content={"Keep an eye on your mail for the winners announcement."}

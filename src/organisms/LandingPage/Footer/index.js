@@ -6,17 +6,22 @@ const Footer = () => {
       <div className="flex justify-center md:px-8">
         <div className=" text-center pt-12 md:flex md:justify-between md:w-full">
           <div className="my-2">
-            <Image src={"/Logo-2.svg"} width={100} height={100} />
+          <Image
+              src="/logo-footer.svg"
+              width={250}
+              height={150}
+              alt="Picture of the author"
+            />
           </div>
-          <div className="py-2">About Us</div>
+          <div className="py-2"><a href="/about">About Us</a></div>
 
-          <div className="py-2">FAQ</div>
+          <div className="py-2"><a href="/#faq">FAQ</a></div>
 
-          <div className="py-2"> Contact Us</div>
+          <div className="py-2"><a href="/#contact">ContactUs</a></div>
 
-          <div className="py-2">rules and regulation</div>
+          <div className="py-2"><a href="/#rules">rules and regulation</a></div>
 
-          <div className="py-2">How the contest works</div>
+          <div className="py-2"><a href="/#contest">How the contest works</a></div>
 
           <div>
           <div className="flex justify-center justify-between mt-2 my-12">

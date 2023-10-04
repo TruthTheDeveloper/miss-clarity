@@ -1,11 +1,21 @@
+"use client"
 import Image from "next/image";
 import { Inter } from 'next/font/google';
+import { useEffect } from "react";
+
 
 const inter = Inter({weight: '700', subsets: ['latin'] })
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Contest = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 1500 });
+  }, []);
   return (
-    <div className=" relative h-[1200px] md:h-[959px] md:w-full mx-auto  mt-12 ">
+    <div id='contest' className=" relative h-[1250px] md:h-[959px] md:w-full mx-auto  mt-12 ">
       <div>
         <Image
           src={"/wallpaper.jpg"}
@@ -26,7 +36,7 @@ const Contest = () => {
           backgroundColor: "rgba(0, 0, 0, 0.5)",
         }}
       >
-        <div className="text-text-white bg-brown w-[282px] md:w-[673px] md:h-[600px] md:mt-32 md:rounded-lg  mx-auto md:ml-12 mt-12 p-8 h-[1050px]">
+        <div className="text-text-white bg-brown w-[282px] md:w-[673px] md:h-[600px] md:mt-32 md:rounded-lg  mx-auto md:ml-12 mt-12 p-8 h-[1100px]" data-aos="fade-right">
           <div className="text-[29px] text-center">
           <h1  className={`${inter.className}`}>How the Contest Works</h1>
           </div>

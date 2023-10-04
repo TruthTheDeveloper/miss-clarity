@@ -56,7 +56,7 @@ const DragScroll = () => {
       badge={"/badge-2.svg"}
       image={"/pic/cf-1.jpg"}
       cash={"$80,000"}
-      prize={"+ Free ticket and all expense paid vacation to huwaii"}
+      prize={"+ Free ticket and all expense paid vacation to paris"}
     />
       </SwiperSlide>
       <SwiperSlide>

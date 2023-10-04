@@ -22,7 +22,7 @@ const Sponsors = () => {
       </div>
       <div>
         <Image
-          src="Jimmy-Choo-logo.svg"
+          src="/Jimmy-Choo-logo.svg"
           width={50}
           height={50}
           alt="Picture of the author"
@@ -52,7 +52,7 @@ const Sponsors = () => {
       </div>
       <div>
         <Image
-          src="/Chanel.svg"
+          src="/Iman.svg"
           width={40}
           height={40}
           alt="Picture of the author"

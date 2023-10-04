@@ -8,7 +8,7 @@ const roboto = Roboto({weight: '700', subsets: ['latin'] })
 const ContactUs = () => {
 
     return(
-        <div className="mt-12 md:mt-0 mx-auto flex flex-col items-center md:basis-1/2  bg-white md:px-6">
+        <div id="contact" className="mt-12 md:mt-0 mx-auto flex flex-col items-center md:basis-1/2  bg-white md:px-6">
             <div className="  text-center text-[30px]">
             <h1 className={roboto.className}>CONTACT US</h1>
             </div>

@@ -6,7 +6,7 @@ import Sponsors from '@/organisms/LandingPage/Sponsors'
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[white] text-text-black w-full">
+    <main className="min-h-screen bg-[white] text-text-black w-full overflow-x-hidden">
       <Navbar/>
      <DashBoard/>
      <Sponsors/>

@@ -16,6 +16,8 @@ const Slider = ({ selectedItem, onChange, next, prev, childComponent }) => {
         showArrows={false}
         showStatus={false}
         showIndicators={false}
+        preventMovementUntilSwipeScrollTolerance={true} 
+        swipeScrollTolerance={50}
       >
         <div className=" md:w-[600px] md:ml-auto ">
           <div className="relative w-full h-[400px] md:h-[560px]  ">
@@ -31,8 +33,7 @@ const Slider = ({ selectedItem, onChange, next, prev, childComponent }) => {
             <div>
               <div>
                 <p>
-                  Sponsored by the biggest fashion and comsestic brands across
-                  all continents, like the world best team in all place dance{" "}
+                  Sponsored by the biggest fashion and comsestic brands in the continent
                 </p>
               </div>
               {/* s */}
@@ -198,8 +199,7 @@ const Slider = ({ selectedItem, onChange, next, prev, childComponent }) => {
               <div>
               <p>
                   {" "}
-                  Our pageants are open to people of all ages, genders, and
-                  ethnicities. We celebrate and embrace the unique qualities
+                  Be part of the contest and stand a chance to win fabulous prizes and rewards to bring you closer to your dream
               
                 </p>
               </div>

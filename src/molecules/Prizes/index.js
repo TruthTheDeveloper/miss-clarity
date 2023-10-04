@@ -1,10 +1,20 @@
+"use client"
+
 import Image from "next/image";
 import { Inter } from 'next/font/google';
 const inter = Inter({weight: '700', subsets: ['latin'] })
+import { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const Prizes = ({ position, awardImage,positionImage,  cash, modeling, vacation, ticket }) => {
+  useEffect(() => {
+    AOS.init({ duration: 1500 });
+  }, []);
   return (
-    <div className="mt-12">
+    <div className="mt-12" data-aos="zoom-in">
       <div className="relative mx-auto h-[139px] w-[139px]">
         
         <Image

@@ -15,7 +15,7 @@ import CurrentWinner from '@/organisms/LandingPage/CurrentWinner'
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[white] text-text-black w-full ">
+    <main className="min-h-screen bg-[white] text-text-black  overflow-x-hidden">
       <Navbar/>
       <Header/>
       <Sponsors/>

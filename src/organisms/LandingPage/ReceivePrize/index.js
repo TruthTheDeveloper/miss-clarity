@@ -13,56 +13,61 @@ const ReceivePrize = () => {
       </div>
       <div className="text-[18px]">
         <div className="flex my-2 md:my-4 ">
-          <div className="mx-2 mt-1">
+          <div className="mx-2 mt-1 w-[50px]">
           <Image
            src="/Vector.svg"
            width={40}
            height={40}
            alt="Picture of the author"
+           style={{width:'auto', height:'auto'}}
            />
           </div>
           <p>Winners would be contacted via email: if additional informational are needed from contestant if should be sumitted via mail</p>
         </div>
         <div className="flex my-2 md:my-4">
-          <div className="mx-2 mt-1">
+          <div className="mx-2 mt-1 w-[35px]">
           <Image
-           src="/Vector.svg"
+            src="/Vector.svg"
            width={40}
            height={40}
            alt="Picture of the author"
+           style={{width:'auto', height:'auto'}}
            />
           </div>
           <p>Contestant can choose to decline any of the prizes if she so will but all prizes would be giving</p>
         </div>
         <div className="flex my-2 md:my-4">
-          <div className="mx-2 mt-1">
+          <div className="mx-2 mt-1 w-[35px]">
           <Image
-           src="/Vector.svg"
+            src="/Vector.svg"
            width={40}
            height={40}
            alt="Picture of the author"
+           style={{width:'auto', height:'auto'}}
            />
           </div>
           <p>Cash prizes would be sent via winners account which would be requested in their mail</p>
         </div>
         <div className="flex my-2 md:my-4">
-          <div className="mx-2 mt-1">
+          <div className="mx-2 mt-1 w-[45px]">
           <Image
-           src="/Vector.svg"
+            src="/Vector.svg"
            width={40}
            height={40}
            alt="Picture of the author"
+           style={{width:'auto', height:'auto'}}
            />
           </div>
           <p>Traveling and Vacation Tickets and gift would be shipped to winners location, contestant are required to pay for shipping fee .</p>
         </div>
         <div className="flex my-2 md:my-4">
-          <div className="mx-2 mt-1">
+          <div className="mx-2 mt-1 w-[40px]">
           <Image
-           src="/Vector.svg"
+            src="/Vector.svg"
            width={40}
            height={40}
            alt="Picture of the author"
+           style={{width:'auto', height:'auto'}}
            />
           </div>
           <p>Please ensure to provide your correct bank account number and address to the mail that request for them.</p>

@@ -15,7 +15,7 @@ const RulesRegulation = () => {
           varius enim in eros elementum tristique.{" "}
         </p>
       </div>
-      <div className="md:w-[900px] w-[400px] h-[300px] md:h-[300px] mx-auto relative my-6 rounded-2xl">
+      <div className="md:w-[900px] w-[350px] h-[300px] md:h-[300px] mx-auto relative my-6 rounded-2xl">
         <Image
           src={"/crown.svg"}
           fill
@@ -24,88 +24,24 @@ const RulesRegulation = () => {
           style={{ height: "100%", width: "100%", borderRadius: 50 }}
         />
       </div>
-      <div className="md:w-[900px] md:mx-auto ">
-        <p className="p-4">
-          Age Restrictions: Failure to meet the specified age requirements for
-          the contest. Incomplete Profile: Not filling out the contestant
-          profile with the required information and photos.
-        </p>
-        <p className="p-4">
-          Age Restrictions: Failure to meet the specified age requirements for
-          the contest. Incomplete Profile: Not filling out the contestant
-          profile with the required information and photos.
-        </p>
-        <p className="p-4">
-          Age Restrictions: Failure to meet the specified age requirements for
-          the contest. Incomplete Profile: Not filling out the contestant
-          profile with the required information and photos.
-        </p>
-        <p className="p-4">
-          Age Restrictions: Failure to meet the specified age requirements for
-          the contest. Incomplete Profile: Not filling out the contestant
-          profile with the required information and photos.
-        </p>
-        <p className="p-4">
-          Age Restrictions: Failure to meet the specified age requirements for
-          the contest. Incomplete Profile: Not filling out the contestant
-          profile with the required information and photos.
-        </p>
-        <p className="p-4">
-          Age Restrictions: Failure to meet the specified age requirements for
-          the contest. Incomplete Profile: Not filling out the contestant
-          profile with the required information and photos.
-        </p>
-        <p className="p-4">
-          Age Restrictions: Failure to meet the specified age requirements for
-          the contest. Incomplete Profile: Not filling out the contestant
-          profile with the required information and photos.
-        </p>
-        <p className="p-4">
-          Age Restrictions: Failure to meet the specified age requirements for
-          the contest. Incomplete Profile: Not filling out the contestant
-          profile with the required information and photos.
-        </p>
-        <p className="p-4">
-          Age Restrictions: Failure to meet the specified age requirements for
-          the contest. Incomplete Profile: Not filling out the contestant
-          profile with the required information and photos.
-        </p>
-        <p className="p-4">
-          Age Restrictions: Failure to meet the specified age requirements for
-          the contest. Incomplete Profile: Not filling out the contestant
-          profile with the required information and photos.
-        </p>
-        <p className="p-4">
-          Age Restrictions: Failure to meet the specified age requirements for
-          the contest. Incomplete Profile: Not filling out the contestant
-          profile with the required information and photos.
-        </p>
-        <p className="p-4">
-          Age Restrictions: Failure to meet the specified age requirements for
-          the contest. Incomplete Profile: Not filling out the contestant
-          profile with the required information and photos.
-        </p>
-        <p className="p-4">
-          Age Restrictions: Failure to meet the specified age requirements for
-          the contest. Incomplete Profile: Not filling out the contestant
-          profile with the required information and photos.
-        </p>
-        <p className="p-4">
-          Age Restrictions: Failure to meet the specified age requirements for
-          the contest. Incomplete Profile: Not filling out the contestant
-          profile with the required information and photos.
-        </p>
-        <p className="p-4">
-          Age Restrictions: Failure to meet the specified age requirements for
-          the contest. Incomplete Profile: Not filling out the contestant
-          profile with the required information and photos.
-        </p>
-        <p className="p-4">
-          Age Restrictions: Failure to meet the specified age requirements for
-          the contest. Incomplete Profile: Not filling out the contestant
-          profile with the required information and photos.
-        </p>
-      </div>
+      <ul className="md:w-[900px] md:mx-auto list-disc">
+        <li className="p-4">
+          Every voted made to each contestant recorded by our system, if for any reason a contestant needs to verify her result contact us and we would resolve any doubt she have 
+        </li>
+        <li className="p-4">
+          We do not refund funds to user and request for refund might prevent you from either continuing or entering the next round of the competition
+        </li>
+        <li className="p-4">
+          Using ultiple account to aquire vote is prohibited you are allowed to vote for urself as much as possible
+        </li>
+        <li className="p-4">
+          Threatenig other contestant in any form is also prohibited, if discover can lead to quick eviction from the contest
+        </li>
+        <li className="p-4">
+          Overly sexually explict photo or one that deplict are prohibited and can lead to diqualification from the contest
+        </li>
+       
+      </ul>
     </div>
   );
 };

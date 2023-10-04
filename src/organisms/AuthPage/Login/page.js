@@ -21,10 +21,10 @@ const Login = () => {
       <div className=" w-[380px] absolute bg-white    rounded-lg " style={{transform: `translate(${-50}%, ${-50}%)`, top:"50%", left:"50%"}}>   
         <div className="m-4">
           <h1 className={`text-center text-[24px] ${inter.className}`}>
-            Sign Up
+            Sign In
           </h1>
           <p className="text-[12px] text-center py-2">
-            Lorem ipsum dolor sit amet adipiscing elit.
+            Login to your acccount
           </p>
         </div>
         <div className="m-5">
