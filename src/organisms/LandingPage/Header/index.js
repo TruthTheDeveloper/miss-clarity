@@ -42,7 +42,7 @@ const Header = () => {
          Embark on a glamorous journey of self-discovery, empowerment, and recognition and become the one to wear the crown of elegance
         </p>
         <div className="w-[147px] md:w-[170px]  h-[30px] md:h-[40px] mt-8 ">
-          <Button label={"Apply Now"} borderRadius={"rounded-[50px]"} color={'bg-pink py-1 text-text-white md:text-[20px]'}/>
+          <Button label={"Apply Now"} borderRadius={"rounded-[50px]"} color={'bg-pink py-1 text-text-white md:text-[20px]'} navigate={'/auth'}/>
         </div>
       </div>
       <div className=" w-full basis-1/2 md:w-[600px] mt-12 md:mt-0 md:mb-12 ">
