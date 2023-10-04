@@ -4,6 +4,7 @@ import QuestionCard from "@/molecules/QuestionCard";
 import { Roboto } from "next/font/google";
 const roboto = Roboto({ weight: "700", subsets: ["latin"] });
 const Frequently = () => {
+  
   const [openModal1, setOpenModal1] = useState(false);
   const [openModal2, setOpenModal2] = useState(false);
   const [openModal3, setOpenModal3] = useState(false);
