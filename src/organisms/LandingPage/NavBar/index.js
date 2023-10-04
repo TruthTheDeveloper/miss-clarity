@@ -2,6 +2,7 @@
 import {useState} from 'react';
 import Image from "next/image";
 import Button from "@/atoms/Button";
+import Link from 'next/link';
 
 const Navbar = () => {
   const [open, setOPen] = useState(false)
@@ -10,14 +11,14 @@ const Navbar = () => {
     <main className="  p-4 ">
       <div className="flex">
         <div className="flex justify-between lg:justify-start w-full">
-          {!open && <><div>
+          {!open && <><Link href="/">
             <Image
               src="/logo.svg"
               width={250}      
               height={150}
               alt="Picture of the author"
             />
-          </div>
+          </Link>
           <div className="md:hidden" onClick={() => setOPen(prev => !prev)}>
             <Image
               src="/breadcrumb.png"

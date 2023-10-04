@@ -51,7 +51,7 @@ const Slider = ({ selectedItem, onChange, next, prev, childComponent }) => {
                 </div>
                 <div>
                   <Image
-                    src={"/dot.png"}
+                    src={"/Dot.png"}
                     width={50}
                     height={50}
                     objectFit="cover"
@@ -60,7 +60,7 @@ const Slider = ({ selectedItem, onChange, next, prev, childComponent }) => {
                 </div>
                 <div>
                   <Image
-                    src={"/dot.png"}
+                    src={"/Dot.png"}
                     width={50}
                     height={50}
                     objectFit="cover"
@@ -134,7 +134,7 @@ const Slider = ({ selectedItem, onChange, next, prev, childComponent }) => {
                 </div>
                 <div>
                   <Image
-                    src={"/dot.png"}
+                    src={"/Dot.png"}
                     width={50}
                     height={50}
                     objectFit="cover"
@@ -143,7 +143,7 @@ const Slider = ({ selectedItem, onChange, next, prev, childComponent }) => {
                 </div>
                 <div>
                   <Image
-                    src={"/dot.png"}
+                    src={"/Dot.png"}
                     width={50}
                     height={50}
                     objectFit="cover"
@@ -218,7 +218,7 @@ const Slider = ({ selectedItem, onChange, next, prev, childComponent }) => {
                 </div>
                 <div>
                   <Image
-                    src={"/dot.png"}
+                    src={"/Dot.png"}
                     width={50}
                     height={50}
                     objectFit="cover"
@@ -227,7 +227,7 @@ const Slider = ({ selectedItem, onChange, next, prev, childComponent }) => {
                 </div>
                 <div>
                   <Image
-                    src={"/dot.png"}
+                    src={"/Dot.png"}
                     width={50}
                     height={50}
                     objectFit="cover"
