@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from 'next/link'
 
-const Button = ({label, borderRadius, color, syl, showImage=false, navigate}) => {
+const Button = ({label, borderRadius, color, syl, showImage=false, navigate, onSubmit=false}) => {
 
     return(
-        <div className={`   w-full h-full ${borderRadius} ${color}`}>
-        <Link href={`${navigate}`} className={` flex justify-center  ${syl} `}>{label}</Link>
+        <div className={`   w-full h-full ${borderRadius} ${color}`} onClick={!onSubmit ? null : onSubmit}>
+        {!onSubmit ? <Link href={`${navigate}`} className={` flex justify-center  ${syl} `}>{label}</Link>: <a className={` flex justify-center  ${syl} `}>{label}</a>}
         {showImage && <Image
                 src={"/copy.svg"}
                 width={25}
