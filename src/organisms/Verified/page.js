@@ -27,13 +27,13 @@ const VerifiedEmail = () => {
       >
         <div className="m-4">
           <h1 className={`text-center text-[30px] font-semibold ${inter.className}`}>
-          Congratulations
+          Email Sent
           </h1>
           <p className="text-[16px] text-center py-2 ">
-          Your Email has been verified
+          Reset Password email has been sent , please check your email
           </p>
         </div>
-        <div className="flex my-4 w-[90%] md:w-[93%] mx-auto">
+        {/* <div className="flex my-4 w-[90%] md:w-[93%] mx-auto">
                 <Button
                   label={"PROCEED TO LOGIN"}
                   color={
@@ -42,7 +42,7 @@ const VerifiedEmail = () => {
                   syl={"font-bold mx-2"}
 
                 />
-              </div>
+              </div> */}
       </div>
     </main>
     )

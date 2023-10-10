@@ -22,7 +22,7 @@ const Slider = ({ selectedItem, onChange, next, prev, childComponent }) => {
         <div className=" md:w-[600px] md:ml-auto ">
           <div className="relative w-full h-[400px] md:h-[560px]  ">
             <Image
-              src={"/pic/charm-4.jpg"}
+              src={"https://firebasestorage.googleapis.com/v0/b/miss-elegance.appspot.com/o/charm-4.jpg?alt=media&token=73095f32-b206-4549-ba2b-8d51a4a30bee&_gl=1*77il7r*_ga*MTg0NjQ0OTE1OC4xNjkyNjU3MTI5*_ga_CW55HF8NVT*MTY5Njk1NDAxOS4zMi4xLjE2OTY5NTUxMTIuNjAuMC4w"}
               fill
               // objectFit="cover"
               alt="Picture of the author"
@@ -101,7 +101,7 @@ const Slider = ({ selectedItem, onChange, next, prev, childComponent }) => {
         <div className=" md:w-[600px] md:ml-auto ">
           <div className="relative w-full h-[400px] md:h-[560px]  ">
             <Image
-              src={"/pic/misscharm-3.jpg"}
+              src={"https://firebasestorage.googleapis.com/v0/b/miss-elegance.appspot.com/o/misscharm-3.jpg?alt=media&token=10202511-4c19-45f4-9d79-52519030de0a&_gl=1*mlmw82*_ga*MTg0NjQ0OTE1OC4xNjkyNjU3MTI5*_ga_CW55HF8NVT*MTY5Njk1NDAxOS4zMi4xLjE2OTY5NTUxNTQuMTguMC4w"}
 
               fill
               // objectFit="cover"
@@ -185,7 +185,7 @@ const Slider = ({ selectedItem, onChange, next, prev, childComponent }) => {
         <div className=" md:w-[600px] md:ml-auto ">
           <div className="relative w-full h-[400px] md:h-[560px]  ">
             <Image
-              src={"/pic/misscharm-1.jpg"}
+              src={"https://firebasestorage.googleapis.com/v0/b/miss-elegance.appspot.com/o/misscharm-1.jpg?alt=media&token=b862d42a-420f-4658-a18b-b8a52ee17e78&_gl=1*uifz7u*_ga*MTg0NjQ0OTE1OC4xNjkyNjU3MTI5*_ga_CW55HF8NVT*MTY5Njk1NDAxOS4zMi4xLjE2OTY5NTUxOTQuNjAuMC4w"}
 
 
               fill

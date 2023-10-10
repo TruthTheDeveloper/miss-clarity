@@ -15,19 +15,19 @@ const ContactUs = () => {
             <p className="text-[13.13px] text-center">If you have any question feel free to ask </p>
             <div>
             <p className="mt-2">Name:</p>
-            <div className="w-[288px] md:w-[380px]  border-[#303237] border-[1.56px] md:border-[2.74px]  rounded-[5.88px] md:h-[35px] ">
+            <div className="w-[288px] md:w-[380px]  border-[1.86px]  rounded-[5.88px] md:h-[35px] py-1">
                 <Input/>
             </div>
            </div>
            <div>
             <p className="mt-2">Email:</p>
-            <div className="w-[288px] md:w-[380px] border-[#303237] border-[1.56px] md:border-[2.74px]   rounded-[5.88px] md:h-[35px] ">
+            <div className="w-[288px] md:w-[380px] border-[1.86px] py-1  rounded-[5.88px] md:h-[35px] ">
                 <Input/>
             </div>
            </div>
             <div>
             <p className="mt-2">Message:</p>
-            <div className="w-[288px] md:w-[380px] h-[101.25px] md:h-[130px] border-[#303237] border-[1.56px] md:border-[2.74px]   rounded-[5.88px]">
+            <div className="w-[288px] md:w-[380px] h-[101.25px] md:h-[130px] border-[1.86px] py-1    rounded-[5.88px]">
                 <Message/>
             </div>
             </div>
