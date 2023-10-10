@@ -49,7 +49,7 @@ const Contest = () => {
             <li className="m-4">6. To become enlisted in our top contestant you must have rank over 1000 votes</li>
             <li className="m-4">5. To vote for a candidate you need to have the candidate voting link, exception been our enlisted top contestant</li>
             <li className="m-4">6. Winners would be contacted via email, by the end of the contest</li>
-            <li className="m-4">7. The Tournament consist of many round you can apply for all rounds if you don't win the current round"!</li>
+            <li className="m-4">7. The Tournament consist of many round you can apply for any other rounds if you don't win the current round"!</li>
             
 
           </ul>
