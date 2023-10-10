@@ -15,7 +15,7 @@ const provider = new GoogleAuthProvider();
 
 
 
-export const useSignIn = (email, password, setLoading, setSignInSucess, id) => {
+export const useLogin = (email, password, setLoading, setSignInSucess, id) => {
 
   
   const _handleGoogleAuth = async () => {

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Input from "@/atoms/Input";
 import Button from "@/atoms/Button";
-import { useSignIn } from "@/hooks/useSignIn";
+import { useLogin } from "@/hooks/useLogin";
 import { useRouter } from "next/navigation";
 import { Toaster } from "react-hot-toast";
 
@@ -28,7 +28,7 @@ const Login = () => {
   const [alreadySignedUp, setAlreadySignedUpd] = useState(false);
   const id = localStorage.getItem("uid");
   
-  const { _handleSignIn, _handleGoogleAuth, result } = useSignIn(
+  const { _handleSignIn, _handleGoogleAuth, result } = useLogin(
     email,
     password,
     setLoading,
