@@ -28,8 +28,14 @@ const VoteCard = ({ image, name, params }) => {
   const [valiadationError, setValidationError] = useState("");
 
   const router = useRouter()
+  let id = null;
 
-  const id = decodeURIComponent(params.slug[1]);
+
+  if(params){
+
+     id = decodeURIComponent(params.slug[1]);
+  }
+
 
   const { _handleVote } = useVote(id, fullname, countValue, setVoteSuccess);
 
@@ -39,13 +45,17 @@ const VoteCard = ({ image, name, params }) => {
       setData(profileDetails?.data()?.profileInfo);
       console.log(profileDetails?.data(), "result");
     };
-    result();
+    if(params){
+      result();
+    }
   }, []);
 
 
 
   useEffect(() => {
-    data && setLoading(false);
+    if(params){
+      data && setLoading(false);
+    }
   }, [data, loading]);
 
   useEffect(() => {
@@ -105,7 +115,7 @@ const VoteCard = ({ image, name, params }) => {
     }
 
     // _handleVote();
-    router.push()
+    router.push("/make-payment")
     
   };
 
