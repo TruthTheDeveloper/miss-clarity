@@ -15,7 +15,7 @@ const provider = new GoogleAuthProvider();
 
 
 
-const useSignIn = (email, password, setLoading, setSignInSucess, id) => {
+export const useSignIn = (email, password, setLoading, setSignInSucess, id) => {
 
   
   const _handleGoogleAuth = async () => {
@@ -105,4 +105,4 @@ const useSignIn = (email, password, setLoading, setSignInSucess, id) => {
   return { _handleSignIn, _handleGoogleAuth, result };
 };
 
-export default useSignIn;
+
