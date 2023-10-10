@@ -17,10 +17,13 @@ const useProfiles = (
 ) => {
 
 
- 
+ let id = null
 
   const _handleProfiles = async () => {
-    const id = localStorage.getItem("uid");
+    if (typeof window !== 'undefined') {
+      // Perform localStorage action
+      id = localStorage.getItem("uid")
+    }
   const result =   profileServices.addProfile(id, {
       userId: id,
       firstName,

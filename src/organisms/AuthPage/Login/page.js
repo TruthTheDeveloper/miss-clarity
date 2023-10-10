@@ -26,7 +26,12 @@ const Login = () => {
   const [valiadationError, setValidationError] = useState("");
   const [signInSucess, setSignInSucess] = useState(false);
   const [alreadySignedUp, setAlreadySignedUpd] = useState(false);
-  const id = localStorage.getItem("uid");
+  let id = null;
+
+  if (typeof window !== 'undefined') {
+    // Perform localStorage action
+    id = localStorage.getItem("uid")
+  }
   
   const { _handleSignIn, _handleGoogleAuth, result } = useLogin(
     email,

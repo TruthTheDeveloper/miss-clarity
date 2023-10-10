@@ -21,7 +21,12 @@ const override = {
   borderColor: "E985A1",
 };
 const DashBoard = () => {
-  const id = localStorage.getItem("uid");
+  let id = null;
+
+  if (typeof window !== 'undefined') {
+    // Perform localStorage action
+    id = localStorage.getItem("uid")
+  }
 
   const [data, setData] = useState();
   const [voteData, setVoteData] = useState()
