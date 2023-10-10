@@ -57,7 +57,7 @@ const Rules = () => {
         </div>
         <div className="relative md:basis-1/2 hidden md:block">
             <Image
-              src={"/miss.jpg"}
+              src={"https://firebasestorage.googleapis.com/v0/b/miss-elegance.appspot.com/o/miss.jpg?alt=media&token=c9f59baf-2170-4bcc-8d0d-b4ded3761442&_gl=1*7e7nhv*_ga*MTg0NjQ0OTE1OC4xNjkyNjU3MTI5*_ga_CW55HF8NVT*MTY5Njk1NDAxOS4zMi4xLjE2OTY5NTUwNjUuNDYuMC4w"}
               fill
               // width={81}
               // height={81}
