@@ -15,7 +15,7 @@ const Home = () => {
     return(
         <main className="min-h-screen bg-[white] text-text-black w-full ">
             <Navbar/>
-            <Story sectionOne={"Embracing Cultural Pride"} sectionTwo={"A Triumph for Diversity"} sectionThree={"Sharing Beauty Beyond Borders"} begining={STORY.begining} middle={STORY.middle} end={STORY.end} image1={'/pic/bb.jpg'} image2={"/pic/bf-4.jpg"} image3={"/pic/bf-2.jpg"} name={"Emma Johnson"} />
+            <Story sectionOne={"Embracing Cultural Pride"} sectionTwo={"A Triumph for Diversity"} sectionThree={"Sharing Beauty Beyond Borders"} begining={STORY.begining} middle={STORY.middle} end={STORY.end} image1={'https://firebasestorage.googleapis.com/v0/b/miss-elegance.appspot.com/o/bb.jpg?alt=media&token=48c323fa-9aa3-44e4-81da-f46fc1ebd54c&_gl=1*1dbn655*_ga*MTg0NjQ0OTE1OC4xNjkyNjU3MTI5*_ga_CW55HF8NVT*MTY5Njk3MDE3OC4zMy4wLjE2OTY5NzAxNzguNjAuMC4w'} image2={"https://firebasestorage.googleapis.com/v0/b/miss-elegance.appspot.com/o/bf-4.jpg?alt=media&token=57045407-59d2-494f-b931-6522fb3bccbe&_gl=1*1bf1cls*_ga*MTg0NjQ0OTE1OC4xNjkyNjU3MTI5*_ga_CW55HF8NVT*MTY5Njk3MDE3OC4zMy4xLjE2OTY5NzAyMDMuMzUuMC4w"} image3={"https://firebasestorage.googleapis.com/v0/b/miss-elegance.appspot.com/o/bf-2.jpg?alt=media&token=4098c830-4fcd-4c2b-980c-e35b5e90004b&_gl=1*jau05q*_ga*MTg0NjQ0OTE1OC4xNjkyNjU3MTI5*_ga_CW55HF8NVT*MTY5Njk3MDE3OC4zMy4xLjE2OTY5NzAyMjguMTAuMC4w"} name={"Emma Johnson"} />
             <Sponsors/>
             <Footer/>
         </main>

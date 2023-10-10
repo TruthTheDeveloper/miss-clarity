@@ -14,7 +14,7 @@ const Home = () => {
     return(
         <main className="min-h-screen bg-[white] text-text-black w-full ">
             <Navbar/>
-            <Story sectionOne={"Passion Ignited"} sectionTwo={"From Contest to Cause"} sectionThree={"A Platform for Change"} begining={STORY.begining} middle={STORY.middle} end={STORY.end}  image1={'/pic/ef-2.jpg'} image2={"/pic/ef-3.jpg"} image3={"/pic/ef-4.jpg"} name={"Ava Brown"}/>
+            <Story sectionOne={"Passion Ignited"} sectionTwo={"From Contest to Cause"} sectionThree={"A Platform for Change"} begining={STORY.begining} middle={STORY.middle} end={STORY.end}  image1={'https://firebasestorage.googleapis.com/v0/b/miss-elegance.appspot.com/o/ef-2.jpg?alt=media&token=e6169c45-efc9-4ee3-bac2-98e81212e62d&_gl=1*13ujjzt*_ga*MTg0NjQ0OTE1OC4xNjkyNjU3MTI5*_ga_CW55HF8NVT*MTY5Njk3MDE3OC4zMy4xLjE2OTY5NzA1MzAuNDYuMC4w'} image2={"https://firebasestorage.googleapis.com/v0/b/miss-elegance.appspot.com/o/ef-3.jpg?alt=media&token=28133859-9f5d-4c37-9ef0-6823aa72d498&_gl=1*148or5m*_ga*MTg0NjQ0OTE1OC4xNjkyNjU3MTI5*_ga_CW55HF8NVT*MTY5Njk3MDE3OC4zMy4xLjE2OTY5NzA1NDcuMjkuMC4w"} image3={"https://firebasestorage.googleapis.com/v0/b/miss-elegance.appspot.com/o/ef-4.jpg?alt=media&token=da33ea46-eb5e-4766-9770-a45636d30859&_gl=1*o64p5k*_ga*MTg0NjQ0OTE1OC4xNjkyNjU3MTI5*_ga_CW55HF8NVT*MTY5Njk3MDE3OC4zMy4xLjE2OTY5NzA1NzAuNi4wLjA."} name={"Ava Brown"}/>
             <Sponsors/>
             <Footer/>
         </main>
