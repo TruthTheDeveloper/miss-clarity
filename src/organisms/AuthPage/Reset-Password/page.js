@@ -18,7 +18,13 @@ const override = {
 };
 
 const ResetPassword = () => {
-  const id = localStorage.getItem("uid");
+
+  let id = null
+
+  if (typeof window !== 'undefined') {
+    // Perform localStorage action
+    id = localStorage.getItem("uid")
+  }
 
 
   const [loading, setLoading] = useState(false);

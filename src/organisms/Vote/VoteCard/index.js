@@ -8,7 +8,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 import profileServices from "@/firebase/services/profile.services";
 import useVote from "@/hooks/useVote";
 import toast, { Toaster } from "react-hot-toast";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const override = {
   display: "block",
