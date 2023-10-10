@@ -16,7 +16,7 @@ const RulesRegulation = () => {
       </div>
       <div className="md:w-[900px] w-[350px] h-[300px] md:h-[300px] mx-auto relative my-6 rounded-2xl">
         <Image
-          src={"https://firebasestorage.googleapis.com/v0/b/miss-elegance.appspot.com/o/crown.svg?alt=media&token=5dd0dc37-a56b-4a5c-aa41-e9bbffa90c27&_gl=1*stmbo2*_ga*MTg0NjQ0OTE1OC4xNjkyNjU3MTI5*_ga_CW55HF8NVT*MTY5Njk3MzcwNC4zNC4xLjE2OTY5NzM3NDguMTYuMC4w"}
+          src={"https://firebasestorage.googleapis.com/v0/b/miss-elegance.appspot.com/o/crownz.png?alt=media&token=87de89f9-e521-4069-a67b-3d33ad5c5a06&_gl=1*53my6p*_ga*MTg0NjQ0OTE1OC4xNjkyNjU3MTI5*_ga_CW55HF8NVT*MTY5Njk3MzcwNC4zNC4xLjE2OTY5NzU1NjIuNjAuMC4w"}
           fill
           objectFit="cover"
           alt="Picture of the author"
