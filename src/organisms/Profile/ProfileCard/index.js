@@ -15,7 +15,6 @@ import {
 import useProfiles from "@/hooks/useProfiles";
 import { uploadAFile } from "@/firebase/utils/uploadFile";
 import { useRouter } from "next/navigation";
-import useSignIn from "@/hooks/useSignIn";
 
 const inter = Inter({ weight: "700", subsets: ["latin"] });
 const override = {

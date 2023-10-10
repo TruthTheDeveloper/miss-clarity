@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Input from "@/atoms/Input";
 import Button from "@/atoms/Button";
-import useSignIn from "@/hooks/useSignIn";
+import useSignIn from '../../../hooks/useSignIn'
 import { useRouter } from "next/navigation";
 import { Toaster } from "react-hot-toast";
 
