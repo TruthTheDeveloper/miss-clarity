@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Input from "@/atoms/Input";
 import Button from "@/atoms/Button";
-import useSignIn from "@/hooks/useSignin";
+import useSignUp from "@/hooks/useSignUp";
 import { useRouter } from 'next/navigation'
 import toast, { Toaster } from 'react-hot-toast';
 
@@ -27,12 +27,13 @@ const SignUp = () => {
   const [loading, setLoading] = useState(false);
   const [signUpSucess, setSignUpSucess] = useState(false)
 
-  const {_handleSignIn} = useSignIn(name, email,password, setLoading, setSignUpSucess);
+  const {_handleSignUp, _handleEmailVerification, _handleGoogleAuth} = useSignUp(name, email,password, setLoading, setSignUpSucess);
   const router = useRouter()
 
   useEffect(() => {
     if(signUpSucess){
       router.push('/verify-email')
+      _handleEmailVerification(email)
     }
   },[signUpSucess])
 
@@ -40,7 +41,7 @@ const SignUp = () => {
   const submitHandler = () => {
     setLoading(true);
     setValidationError("");
-    if (name.length <= 1 || email.length <= 1 || password <= 1) {
+    if (name.length < 1 || email.length <1 || password < 1) {
       setValidationError("Please no field should be empty");
       setLoading(false);
       return
@@ -52,7 +53,7 @@ const SignUp = () => {
     }
 
     if (email !== "" && password !== "" && name) {
-      _handleSignIn()
+      _handleSignUp()
     }else {
       setLoading(false);
     }
@@ -96,15 +97,15 @@ const SignUp = () => {
             <label className="text-[14px]">
               Full Name<span className="ml-1">*</span>
             </label>
-            <div className="border rounded-[5px]">
+            <div className="border rounded-[5px] py-1">
               <Input value={name} change={(e) => setName(e.target.value)} />
             </div>
           </div>
-          <div className="my-2 rounded-[10px]">
+          <div className="my-2 rounded-[10px] ">
             <label className="text-[14px]">
               Email<span className="ml-1">*</span>
             </label>
-            <div className="border">
+            <div className="border rounded-[5px] py-1">
               <Input value={email} change={(e) => setEmail(e.target.value)} />
             </div>
           </div>
@@ -112,7 +113,7 @@ const SignUp = () => {
             <label className="text-[14px]">
               Password<span className="ml-1">*</span>
             </label>
-            <div className="border">
+            <div className="border rounded-[5px] py-1">
               <Input
               type={"password"}
                 value={password}
@@ -124,9 +125,10 @@ const SignUp = () => {
             <label className="text-[14px]">
               Confirm Password<span className="ml-1">*</span>
             </label>
-            <div className="border ">
+            <div className="border rounded-[5px] py-1">
               <Input
                 value={confirmPassword}
+                type={"password"}
                 change={(e) => setConfirmPassword(e.target.value)}
               />
             </div>
@@ -145,6 +147,7 @@ const SignUp = () => {
               />
             </div>:  <Button
               label={"Sign up"}
+              
               color={
                 "text-white bg-pink text-[14px] py-1 cursor-pointer    rounded-md"
               }
@@ -156,10 +159,14 @@ const SignUp = () => {
           </div>
           <div className="my-3">
             <Button
-              label={"Sign up"}
+              label={"Sign up with Google"}
+              authButton
+              authStyle={'flex justify-center'}
               color={
                 "text-black text-[14px] py-1 cursor-pointer font-semibold border border-[#000] rounded-md "
               }
+
+              onSubmit={_handleGoogleAuth}
             />
           </div>
         </div>

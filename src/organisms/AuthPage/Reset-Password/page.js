@@ -5,11 +5,11 @@ import Input from "@/atoms/Input";
 import Button from "@/atoms/Button";
 import useSignIn from "@/hooks/useSignIn";
 import { useRouter } from "next/navigation";
-import { Toaster } from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 
-import { useState,  useEffect } from "react";
+import { useState, CSSProperties, useEffect } from "react";
 import ClipLoader from "react-spinners/ClipLoader";
-import Link from "next/link";
+import useResetPassword from "@/hooks/useResetPassword";
 const inter = Inter({ weight: "700", subsets: ["latin"] });
 
 const override = {
@@ -18,64 +18,40 @@ const override = {
   borderColor: "white",
 };
 
-const Login = () => {
+const ResetPassword = () => {
+  const id = localStorage.getItem("uid");
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+
   const [loading, setLoading] = useState(false);
   const [valiadationError, setValidationError] = useState("");
   const [signInSucess, setSignInSucess] = useState(false);
   const [alreadySignedUp, setAlreadySignedUpd] = useState(false);
-  const id = localStorage.getItem("uid");
-  
-  const { _handleSignIn, _handleGoogleAuth, result } = useSignIn(
-    email,
-    password,
-    setLoading,
-    setSignInSucess,
-    id
-  );
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+
+  const { _handleResetPassword, reAuthenticateUser } = useResetPassword(password)
 
   const router = useRouter();
 
   useEffect(() => {
-    if(signInSucess){
-      console.log('succesful')
-      const resolved = async () => {
-        const fire = await result()
-  
-        console.log(fire, 'fire')
-  
-        if(fire){
-          console.log('fired')
-          router.push("/dashboard");
-        }else{
-          console.log('not fired')
-
-          router.push("/profile");
-  
-        }
-
-      };
-  
-      resolved();
-
-      
+    if (signInSucess && !alreadySignedUp) {
+      router.push("/profile");
+    } else if (signInSucess && alreadySignedUp) {
+      router.push("/dashboard");
     }
-  },[signInSucess])
-
+  }, [signInSucess, alreadySignedUp]);
 
   const submitHandler = () => {
     setLoading(true);
     setValidationError("");
-    if (email.length < 1 || password < 1) {
+    if (password.length < 1) {
       setValidationError("Please no field should be empty");
       setLoading(false);
       return;
     }
 
-    if (email !== "" && password !== "") {
-      _handleSignIn();
+    if (password !== "") {
+        _handleResetPassword()
     } else {
       setLoading(false);
     }
@@ -104,23 +80,15 @@ const Login = () => {
       >
         <div className="m-4">
           <h1 className={`text-center text-[24px] ${inter.className}`}>
-            Sign In
+            Reset Password
           </h1>
-          <p className="text-[12px] text-center py-2">Login to your acccount</p>
+          <p className="text-[12px] text-center py-2">Add new password</p>
           <p className="text-red text-sm text-center font-semibold">
             {valiadationError}
           </p>
         </div>
         <div className="m-5">
-          <div className="my-2">
-            <label className="text-[14px]">
-              Email<span className="ml-1">*</span>
-            </label>
-            <div className="border rounded-[5px] py-1">
-              <Input value={email} change={(e) => setEmail(e.target.value)} />
-            </div>
-          </div>
-          <div className="my-2">
+          <div className="my-2 rounded-[10px]">
             <label className="text-[14px]">
               Password<span className="ml-1">*</span>
             </label>
@@ -129,6 +97,18 @@ const Login = () => {
                 type={"password"}
                 value={password}
                 change={(e) => setPassword(e.target.value)}
+              />
+            </div>
+          </div>
+          <div className="my-2">
+            <label className="text-[14px]">
+              Confirm Password<span className="ml-1">*</span>
+            </label>
+            <div className="border rounded-[5px] py-1">
+              <Input
+                value={confirmPassword}
+                type={"password"}
+                change={(e) => setConfirmPassword(e.target.value)}
               />
             </div>
           </div>
@@ -148,7 +128,7 @@ const Login = () => {
               </div>
             ) : (
               <Button
-                label={"Sign In"}
+                label={"Reset Password"}
                 color={
                   "text-white bg-pink text-[14px] py-1 cursor-pointer    rounded-md"
                 }
@@ -156,23 +136,6 @@ const Login = () => {
               />
             )}
           </div>
-          <div className="my-3 ">
-            <Button
-              label={"Login in with Google"}
-              authButton
-              authStyle={"flex justify-center"}
-              color={
-                "text-black text-[14px] py-1 cursor-pointer font-semibold border border-[#000] rounded-md "
-              }
-              onSubmit={_handleGoogleAuth}
-            />
-          </div>
-          <Link
-            className="text-[12px] underline"
-            href={"/auth/forget-password"}
-          >
-            Forget Password?
-          </Link>
         </div>
       </div>
       <Toaster />
@@ -180,4 +143,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default ResetPassword;

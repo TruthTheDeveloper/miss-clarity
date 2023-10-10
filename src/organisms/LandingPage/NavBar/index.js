@@ -46,7 +46,7 @@ const Navbar = () => {
             <div className="flex justify-center  w-full">
               <div className="w-[147px] h-[30px] mt-2 mx-2 cursor-pointer ">
                 <Button
-                navigate={"auth/login"}
+                navigate={"/auth/login"}
                   label={"login"}
                   borderRadius={"rounded-[50px]"}
                   color={"bg-pink text-text-white"}

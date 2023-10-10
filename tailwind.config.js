@@ -37,7 +37,8 @@ module.exports = {
       'red':'#FF0000',
       'brown':'#1C0210',
       "white":'#fff',
-      "green":"#48A301"
+      "green":"#48A301",
+      "black":'#000'
 
     },
   },
