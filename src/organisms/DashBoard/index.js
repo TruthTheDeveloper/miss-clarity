@@ -58,7 +58,7 @@ const DashBoard = () => {
 
   useEffect(() => {
     if (data) {
-      setValue(`/${data?.firstName} - ${data?.lastName}/${id}`);
+      setValue(`https://miss-elegance.vercel.app/${data?.firstName} - ${data?.lastName}/${id}`);
     }
   }, [data]);
 

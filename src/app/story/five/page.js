@@ -14,7 +14,7 @@ const Home = () => {
     return(
         <main className="min-h-screen bg-[white] text-text-black w-full ">
             <Navbar/>
-            <Story sectionOne={"Celebrating Cultural Heritage"} sectionTwo={"A Win for Unity"} sectionThree={"Promoting Diversity and Unity"} begining={STORY.begining} middle={STORY.middle} end={STORY.end} image1={'/pic/z-2.jpg'} image2={'/pic/z-3.jpg'} image3={'/pic/z-4.jpg'} name={"Isabelle Martinez"}/>
+            <Story sectionOne={"Celebrating Cultural Heritage"} sectionTwo={"A Win for Unity"} sectionThree={"Promoting Diversity and Unity"} begining={STORY.begining} middle={STORY.middle} end={STORY.end} image1={'https://firebasestorage.googleapis.com/v0/b/miss-elegance.appspot.com/o/z-2.jpg?alt=media&token=98b1176d-06b6-4126-b742-b26c719b1205&_gl=1*1ko50fr*_ga*MTg0NjQ0OTE1OC4xNjkyNjU3MTI5*_ga_CW55HF8NVT*MTY5Njk3MDE3OC4zMy4xLjE2OTY5NzA2NDAuNjAuMC4w'} image2={'https://firebasestorage.googleapis.com/v0/b/miss-elegance.appspot.com/o/z-3.jpg?alt=media&token=d6dce87b-ed69-4bc1-a554-a27c6ac65f5a&_gl=1*kvzaea*_ga*MTg0NjQ0OTE1OC4xNjkyNjU3MTI5*_ga_CW55HF8NVT*MTY5Njk3MDE3OC4zMy4xLjE2OTY5NzA2NTUuNDUuMC4w'} image3={'/pic/z-4.jpg'} name={"Isabelle Martinez"}/>
             <Sponsors/>
             <Footer/>
         </main>

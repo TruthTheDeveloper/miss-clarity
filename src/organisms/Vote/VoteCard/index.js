@@ -20,22 +20,19 @@ const inter = Inter({ weight: "700", subsets: ["latin"] });
 const VoteCard = ({ image, name, params }) => {
   const [data, setData] = useState();
   const [loading, setLoading] = useState(true);
-  const [voteLoading, setVoteLoading] = useState(false)
+  const [voteLoading, setVoteLoading] = useState(false);
   const [countValue, setCountValue] = useState(1);
   const [priceValue, setPriceValue] = useState(1);
   const [fullname, setfullName] = useState("");
   const [voteSucess, setVoteSuccess] = useState(false);
   const [valiadationError, setValidationError] = useState("");
 
-  const router = useRouter()
+  const router = useRouter();
   let id = null;
 
-
-  if(params){
-
-     id = decodeURIComponent(params.slug[1]);
+  if (params) {
+    id = decodeURIComponent(params.slug[1]);
   }
-
 
   const { _handleVote } = useVote(id, fullname, countValue, setVoteSuccess);
 
@@ -45,15 +42,13 @@ const VoteCard = ({ image, name, params }) => {
       setData(profileDetails?.data()?.profileInfo);
       console.log(profileDetails?.data(), "result");
     };
-    if(params){
+    if (params) {
       result();
     }
   }, []);
 
-
-
   useEffect(() => {
-    if(params){
+    if (params) {
       data && setLoading(false);
     }
   }, [data, loading]);
@@ -61,30 +56,26 @@ const VoteCard = ({ image, name, params }) => {
   useEffect(() => {
     if (voteSucess && data) {
       toast.success(`you gave ${countValue} votes to ${data?.firstName}`);
-      setVoteLoading(false)
-      setVoteSuccess(false)
-    }else{
-      setVoteLoading(false)
-      setVoteSuccess(false)
+      setVoteLoading(false);
+      setVoteSuccess(false);
+    } else {
+      setVoteLoading(false);
+      setVoteSuccess(false);
     }
   }, [voteSucess]);
 
   const inputValueHandler = (text) => {
-    setValidationError('')
+    setValidationError("");
     const numberValue = parseFloat(text);
 
-  
-    if (typeof numberValue ===  'number' && !isNaN(numberValue)) {
+    if (typeof numberValue === "number" && !isNaN(numberValue)) {
       setCountValue(numberValue);
 
       setPriceValue(numberValue);
-    }else{
+    } else {
       setCountValue(parseFloat(0));
       setPriceValue(parseFloat(0));
     }
-
-
-    
   };
 
   const subtract = () => {
@@ -102,25 +93,61 @@ const VoteCard = ({ image, name, params }) => {
   };
 
   const submitVote = () => {
-    setVoteLoading(true)
+    setVoteLoading(true);
     if (fullname === "") {
       setValidationError("Full name is required");
-      setVoteLoading(false)
+      setVoteLoading(false);
       return;
     } else if (countValue < 1 && priceValue < 1) {
       setValidationError("Vote is required");
-      setVoteLoading(false)
+      setVoteLoading(false);
 
       return;
     }
 
     // _handleVote();
-    router.push("/make-payment")
-    
+    router.push("/make-payment");
   };
 
-  const handleInput = (event) => {
-    
+  const handleInput = (event) => {};
+
+  const renderImage = () => {
+    if (data?.imageURL && !image) {
+      return (
+        <Image
+          src={data && data.imageURL}
+          width={280}
+          height={180}
+          objectFit="cover"
+          alt="Picture of the author"
+          style={{ weight: "100%", height: "100%" }}
+        />
+      );
+    } else if (image) {
+      return (
+        <Image
+          src={image}
+          width={280}
+          height={180}
+          objectFit="cover"
+          alt="Picture of the author"
+          style={{ weight: "100%", height: "100%" }}
+        />
+      );
+    } else {
+      return (
+        <div className=" text-pink">
+          <ClipLoader
+            color={"text-pink"}
+            loading={loading}
+            cssOverride={override}
+            size={150}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        </div>
+      );
+    }
   };
 
   return (
@@ -155,31 +182,11 @@ const VoteCard = ({ image, name, params }) => {
         <div className="md:flex">
           <div className="basis-1/2 md:my-2">
             <div className="w-[280px] md:w-[200px] mx-auto">
-              {data?.imageURL ? (
-                <Image
-                  src={data && data.imageURL}
-                  width={280}
-                  height={180}
-                  objectFit="cover"
-                  alt="Picture of the author"
-                  style={{ weight: "100%", height: "100%" }}
-                />
-              ) : (
-                <div className=" text-pink">
-                  <ClipLoader
-                    color={"text-pink"}
-                    loading={loading}
-                    cssOverride={override}
-                    size={150}
-                    aria-label="Loading Spinner"
-                    data-testid="loader"
-                  />
-                </div>
-              )}
+              {renderImage()}
             </div>
             <p className="text-center text-[24px] my-12 md:my-6">
               {" "}
-              {data && `${data?.firstName} ${data?.lastName}`}
+              {image ? name : `${data?.firstName} ${data?.lastName}`}
             </p>
           </div>
 
@@ -194,7 +201,6 @@ const VoteCard = ({ image, name, params }) => {
                   change={(e) => setfullName(e.target.value)}
                   value={fullname}
                   onInput={handleInput}
-                
                 />
               </div>
             </div>
@@ -247,22 +253,25 @@ const VoteCard = ({ image, name, params }) => {
             </div>
             <div className=" w-[90%] md:w-[93%] mx-auto">
               <div className="flex my-4">
-                {voteLoading ? <ClipLoader
-              color={"#E985A1"}
-              loading={voteLoading}
-              cssOverride={override}
-              size={20}
-              aria-label="Loading Spinner"
-              data-testid="loader"
-            />: <Button
-            label={"Vote"}
-            color={
-              "text-white bg-pink text-[28px] md:text-[18px]   py-1 cursor-pointer    rounded-md"
-            }
-            onSubmit={submitVote}
-            syl={"font-bold"}
-          />}
-                
+                {voteLoading ? (
+                  <ClipLoader
+                    color={"#E985A1"}
+                    loading={voteLoading}
+                    cssOverride={override}
+                    size={20}
+                    aria-label="Loading Spinner"
+                    data-testid="loader"
+                  />
+                ) : (
+                  <Button
+                    label={"Vote"}
+                    color={
+                      "text-white bg-pink text-[28px] md:text-[18px]   py-1 cursor-pointer    rounded-md"
+                    }
+                    onSubmit={submitVote}
+                    syl={"font-bold"}
+                  />
+                )}
               </div>
             </div>
           </div>
