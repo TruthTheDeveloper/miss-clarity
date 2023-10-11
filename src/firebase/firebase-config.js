@@ -5,13 +5,13 @@ import { getAuth } from "firebase/auth";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCHWozk6IQvCbwWf3mH5wrMa7XBjfcXiFU",
-  authDomain: "miss-elegance.firebaseapp.com",
-  projectId: "miss-elegance",
-  storageBucket: "miss-elegance.appspot.com",
-  messagingSenderId: "602923477992",
-  appId: "1:602923477992:web:b532e750f7fb26d4ba525d",
-  measurementId: "G-4740MVXPG0"
+  apiKey: 'AIzaSyCHWozk6IQvCbwWf3mH5wrMa7XBjfcXiFU',
+  authDomain: 'miss-elegance.firebaseapp.com',
+  projectId: 'miss-elegance',
+  storageBucket: 'miss-elegance.appspot.com',
+  messagingSenderId: '602923477992',
+  appId: '1:602923477992:web:b532e750f7fb26d4ba525d',
+  measurementId: 'G-4740MVXPG0'
 };
 
 
