@@ -32,13 +32,14 @@ const VoteCard = ({ image, name, params }) => {
 
   if (params) {
     id = decodeURIComponent(params.slug[1]);
+    console.log(`"${id}"`)
   }
 
-  const { _handleVote } = useVote(id, fullname, countValue, setVoteSuccess);
+  const { _handleVote } = useVote(`"${id}"`, fullname, countValue, setVoteSuccess);
 
   useEffect(() => {
     const result = async () => {
-      const profileDetails = await profileServices.getProfile(id);
+      const profileDetails = await profileServices.getProfile(`"${id}"`);
       setData(profileDetails?.data()?.profileInfo);
       console.log(profileDetails?.data(), "result");
     };

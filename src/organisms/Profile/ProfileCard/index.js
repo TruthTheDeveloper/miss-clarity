@@ -88,12 +88,13 @@ const ProfileCard = () => {
   };
 
   const submitHandler = () => {
+    setLoading(true);
     if (imageURL === null) {
       alert(`Profile picture is required`);
       setLoading(false);
       return;
     }
-    setLoading(true);
+    
     setValidationError("");
     if (
       firstName < 1 ||
