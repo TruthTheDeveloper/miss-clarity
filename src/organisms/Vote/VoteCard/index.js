@@ -186,7 +186,7 @@ const VoteCard = ({ image, name, params }) => {
             </div>
             <p className="text-center text-[24px] my-12 md:my-6">
               {" "}
-              {image ? name : `${data?.firstName} ${data?.lastName}`}
+              {image ? name : `${data ? data?.firstName: ''} ${data ? data?.lastName:''}`}
             </p>
           </div>
 
@@ -208,9 +208,9 @@ const VoteCard = ({ image, name, params }) => {
               Votes<span className="ml-1 ">*</span>
             </div>
 
-            <div className="   grid grid-rows-2 md:grid-rows-1 md:grid-cols-5 mr-2">
+            <div className="   grid grid-rows-2 md:grid-rows-1 md:grid-cols-5 ">
               <div className="flex w-[335px]  mx-auto md:w-full  col-span-2  border row-start-1 row-end-2 md:col-start-2 md:col-end-5 md:row-start-1 my-3 rounded-md md:ml-1">
-                <div className=" rounded-md w-[50%]">
+                <div className=" rounded-md w-[50%] py-1">
                   <Input
                     label={"Full Name"}
                     placeholder={"50"}
@@ -219,7 +219,7 @@ const VoteCard = ({ image, name, params }) => {
                     min="1"
                   />
                 </div>
-                <div className=" border-l-2 rounded-md w-[50%]">
+                <div className=" border-l-2 rounded-md w-[50%] pr-1">
                   <Input
                     label={"Full Name"}
                     placeholder={"$50"}
@@ -266,7 +266,7 @@ const VoteCard = ({ image, name, params }) => {
                   <Button
                     label={"Vote"}
                     color={
-                      "text-white bg-pink text-[28px] md:text-[18px]   py-1 cursor-pointer    rounded-md"
+                      "text-white bg-pink text-[16px] md:text-[18px]   py-1 cursor-pointer    rounded-md"
                     }
                     onSubmit={submitVote}
                     syl={"font-bold"}

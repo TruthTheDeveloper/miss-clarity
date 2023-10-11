@@ -250,10 +250,10 @@ const ProfileCard = () => {
           >
             <div id="row1">
               <div className="my-2 rounded-[10px]">
-                <label className="text-[14px]">
+                <label className="text-[14px] ">
                   First Name<span className="ml-1">*</span>
                 </label>
-                <div className="border rounded-[5px]">
+                <div className="border rounded-[5px] py-1">
                   <Input
                     value={firstName}
                     change={(e) => setFirstName(e.target.value)}
@@ -264,7 +264,7 @@ const ProfileCard = () => {
                 <label className="text-[14px]">
                   Last Name<span className="ml-1">*</span>
                 </label>
-                <div className="border rounded-[5px]">
+                <div className="border rounded-[5px] py-1">
                   <Input
                     value={lastName}
                     change={(e) => setLastName(e.target.value)}
@@ -275,7 +275,7 @@ const ProfileCard = () => {
                 <label className="text-[14px]">
                   Country<span className="ml-1">*</span>
                 </label>
-                <div className="border rounded-[5px]">
+                <div className="border rounded-[5px] py-1">
                   <CountryDropdown
                     value={country}
                     classes="h-[35px] w-full outline-none"
@@ -287,7 +287,7 @@ const ProfileCard = () => {
                 <label className="text-[14px]">
                   State/Region<span className="ml-1">*</span>
                 </label>
-                <div className="border  rounded-[5px]">
+                <div className="border  rounded-[5px] py-1">
                   <RegionDropdown
                     country={country}
                     value={region}
@@ -300,13 +300,13 @@ const ProfileCard = () => {
                 <label className="text-[14px]">
                   Phone Number<span className="ml-1">*</span>
                 </label>
-                <div className="rounded-[5px]">
+                <div className="rounded-[5px] py-1">
                   <PhoneInput
                     placeholder="Enter phone number"
                     value={phoneNumber}
                     onChange={setPhoneNumber}
                     className={
-                      "h-[35px] p-3  w-full outline-none border pl-2 rounded-md"
+                      "h-[42px] p-3  w-full outline-none border pl-2 rounded-md"
                     }
                   />
                 </div>
@@ -318,7 +318,7 @@ const ProfileCard = () => {
                 <label className="text-[14px]">
                   Age Range<span className="ml-1">*</span>
                 </label>
-                <div className="border rounded-[5px] ">
+                <div className="border rounded-[5px] py-1">
                   <Input
                     type="number"
                     value={age}
@@ -330,13 +330,13 @@ const ProfileCard = () => {
                 <label className="text-[14px]">
                   Bio<span className="ml-1">*</span>
                 </label>
-                <div className="border rounded-[5px]">
+                <div className="border rounded-[5px] py-1">
                   <Input value={bio} change={(e) => setBio(e.target.value)} />
                 </div>
               </div>
               <div className="my-2 rounded-[10px]">
                 <label className="text-[14px]">TikTok</label>
-                <div className="border rounded-[5px]">
+                <div className="border rounded-[5px] py-1">
                   <Input
                     value={tikTok}
                     change={(e) => setTikTok(e.target.value)}
@@ -347,7 +347,7 @@ const ProfileCard = () => {
                 <label className="text-[14px]">
                   Instagram<span className="ml-1">*</span>
                 </label>
-                <div className="border rounded-[5px]">
+                <div className="border rounded-[5px] py-1">
                   <Input
                     value={instagram}
                     change={(e) => setInstagram(e.target.value)}
@@ -358,7 +358,7 @@ const ProfileCard = () => {
                 <label className="text-[14px]">
                   Facebook<span className="ml-1">*</span>
                 </label>
-                <div className="border rounded-[5px]">
+                <div className="border rounded-[5px] py-1">
                   <Input
                     value={facebook}
                     change={(e) => setFaceBook(e.target.value)}
