@@ -13,7 +13,7 @@ const Frequently = () => {
 
 
   return (
-    <div id="faq" className="mx-6 md: mt-12 md:flex md:justify-between w-full">
+    <div id="faq" className="px-6 md: mt-12 md:flex md:justify-between w-full">
       <div className="md:basis-1/2 md:px-8">
         <div className="text-[35.34px] leading-[42.41px] ">
           <h1 className={roboto.className}>Frequently asked questions</h1>
@@ -22,7 +22,7 @@ const Frequently = () => {
           <p>Frequently asked questions ordered by popularity.</p>
         </div>
       </div>
-      <div className="mt-6 md:mt-0 md:basis-1/2 md:ml-16 ">
+      <div className="mt-6 md:mt-0 w-full md:basis-1/2 md:ml-16">
         <QuestionCard
           question={" How do I enter the online beauty pageant contest?"}
           answers={

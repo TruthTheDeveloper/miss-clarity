@@ -64,7 +64,7 @@ const useSignUp = (name, email, password, setLoading, setSignUpSucess) => {
 
   const _handleEmailVerification = (email) => {
     console.log(email, "email");
-    sendSignInLinkToEmail(auth, email, actionCodeSettings)
+    sendSignInLinkToEmail(auth, email.toLowerCase(), actionCodeSettings)
       .then(() => {
         // The link was successfully sent. Inform the user.
         // Save the email locally so you don't need to ask the user for it again
@@ -81,7 +81,7 @@ const useSignUp = (name, email, password, setLoading, setSignUpSucess) => {
   };
 
   const _handleSignUp = async () => {
-    createUserWithEmailAndPassword(auth, email, password)
+    createUserWithEmailAndPassword(auth, email.toLowerCase(), password)
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
@@ -99,16 +99,12 @@ const useSignUp = (name, email, password, setLoading, setSignUpSucess) => {
 
         // ...
       })
-      .then((res) => {
-        console.log(res);
-      })
+
 
       .catch((error) => {
         setLoading(false);
         const message = removeWordIfFound(error.message, "Firebase");
         toast.error(message);
-        toast.error(error.code)
-        console.log(error.message, "gaga");
         const errorCode = error.code;
         const errorMessage = error.message;
         // ..

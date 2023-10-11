@@ -60,7 +60,7 @@ export const useLogin = (email, password, setLoading, setSignInSucess, id) => {
 
   const _handleSignIn = async () => {
     if (email !== "" && password !== "") {
-      signInWithEmailAndPassword(auth, email, password)
+      signInWithEmailAndPassword(auth, email.toLowerCase(), password)
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
