@@ -107,6 +107,7 @@ const useSignUp = (name, email, password, setLoading, setSignUpSucess) => {
         setLoading(false);
         const message = removeWordIfFound(error.message, "Firebase");
         toast.error(message);
+        toast.error(error.code)
         console.log(error.message, "gaga");
         const errorCode = error.code;
         const errorMessage = error.message;
