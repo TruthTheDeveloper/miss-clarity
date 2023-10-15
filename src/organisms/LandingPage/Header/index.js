@@ -38,8 +38,9 @@ const Header = () => {
         <p className={`${roboto.className} text-[28px] md:text-[45px] md:leading-12`}>
         Biggest Online Beauty Pageant Contest
         </p>
+        <p className={`${roboto.className} text-[18px] md:text-[20px] md:leading-12`}>Join Over 95K+ Contestant</p>
         <p className="pt-6 md:text-[20px] md:leading-6 ">
-         Embark on a glamorous journey of self-discovery, empowerment, and recognition and become the one to wear the crown of elegance
+         In Embarking on a glamorous journey of self-discovery, empowerment, and recognition and become the one to wear the crown of elegance
         </p>
         <div className="w-[147px] md:w-[170px]  h-[30px] md:h-[40px] mt-8 ">
           <Button label={"Apply Now"} borderRadius={"rounded-[50px]"} color={'bg-pink py-1 text-text-white md:text-[20px]'} navigate={'/auth'}/>
