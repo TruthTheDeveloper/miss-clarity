@@ -32,7 +32,6 @@ const VoteCard = ({ image, name, params }) => {
 
   if (params) {
     id = decodeURIComponent(params.slug[1]);
-    console.log(`"${id}"`)
   }
 
   const { _handleVote } = useVote(`"${id}"`, fullname, countValue, setVoteSuccess);
